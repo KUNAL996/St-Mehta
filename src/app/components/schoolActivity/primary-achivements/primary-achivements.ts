@@ -58,10 +58,10 @@ export class PrimaryAchievements implements OnInit, OnDestroy {
           {
             url: 'https://i.postimg.cc/mDTkXrg1/winners-of-patriotic-group-singing.jpg',
             title: 'Winners of Patriotic group singing',
-            description: 'Celebrating the voices that filled the air with patriotic harmony.'
+            description: 'Got 1st consolation prize in Patriotic song competition Oraganised by Swami Shri Prempuri Ashram Trust, Babulnath'
           }
         ],
-        description: 'Celebrating the voices that filled the air with patriotic harmony.',
+        description: 'Got 1st consolation prize in Patriotic song competition Oraganised by Swami Shri Prempuri Ashram Trust, Babulnath',
         color: 'blue'
       },
       {
@@ -84,15 +84,15 @@ export class PrimaryAchievements implements OnInit, OnDestroy {
           {
             url: 'https://i.postimg.cc/g2QnwwbH/Winner-of-N-Ward-competition.jpg',
             title: 'N Ward Art Competition Winner',
-            description: 'Awarded for outstanding creativity and artistic expression in the N Ward contest.'
+            description: 'Got 3rd consolation prize in story telling Competition organised by BMC N Ward Competition.'
           },
           {
             url: 'https://i.postimg.cc/zfh3TJJZ/WINNERS-OF-N-WARD-LEVEL.jpg',
             title: 'N Ward Level Competition Champions',
-            description: 'Students secured top ranks at the N Ward level through dedication and talent.'
+            description: 'Got 3rd consolation prize in story telling Competition organised by BMC N Ward Competition.'
           }
         ],
-        description: 'Awarded for outstanding creativity and artistic expression in the N Ward contest.',
+        description: 'Got 3rd consolation prize in story telling Competition organised by BMC N Ward Competition.',
         color: 'red'
       },
       {
@@ -102,10 +102,10 @@ export class PrimaryAchievements implements OnInit, OnDestroy {
           {
             url: 'https://i.postimg.cc/JncndPDp/WINNERS-OF-KALA-ACADEMY.jpg',
             title: 'Kala Academy Winners',
-            description: 'Winners of the Kala Stambha Interclass Competition for showcasing talent in drawing, singing, handwriting, and essay writing.'
+            description: `Kala academy winners organised by Kala group Mumbai organised by all India art talent contest by Kala  children' academy.`
           }
         ],
-        description: 'Winners of the Kala Stambha Interclass Competition for showcasing talent in drawing, singing, handwriting, and essay writing.',
+        description: `Kala academy winners organised by Kala group Mumbai organised by all India art talent contest by Kala  children' academy.`,
         color: 'blue'
       },
       {
@@ -115,30 +115,30 @@ export class PrimaryAchievements implements OnInit, OnDestroy {
           {
             url: 'https://i.postimg.cc/zXfB0wJk/WINNERS-OF-XPRESSION-COMPETITION.jpg',
             title: 'Xpression Competition Winners',
-            description: 'Solo or group of talented students showcasing their creative expressions and artistic abilities.'
+            description: 'Xpression competition Oraganised by Rotaract club of Deonar.'
           },
           {
             url: 'https://i.postimg.cc/cCxHqwf0/WINNERS-OF-XPRESSION-COMPETITION-3.jpg',
             title: 'Xpression Competition Winners',
-            description: 'Solo or group of talented students showcasing their creative expressions and artistic abilities.'
+            description: 'Xpression competition Oraganised by Rotaract club of Deonar.'
           },
           {
             url: 'https://i.postimg.cc/RVb083hx/WINNERS-OF-XPRESSION.jpg',
             title: 'Xpression Competition Winners',
-            description: 'Solo or group of talented students showcasing their creative expressions and artistic abilities.'
+            description: 'Xpression competition Oraganised by Rotaract club of Deonar.'
           },
           {
             url: 'https://i.postimg.cc/3r1NXfHR/WINNER-OF-XPRESSION-COMPETITION-2.jpg',
             title: 'Xpression Competition Winners',
-            description: 'Solo or group of talented students showcasing their creative expressions and artistic abilities.'
+            description: 'Xpression competition Oraganised by Rotaract club of Deonar.'
           },
           {
             url: 'https://i.postimg.cc/fy8bMyvX/WINNER-OF-XPRESSION-COMPETITION.jpg',
             title: 'Xpression Competition Winners',
-            description: 'Solo or group of talented students showcasing their creative expressions and artistic abilities.'
+            description: 'Xpression competition Oraganised by Rotaract club of Deonar.'
           }
         ],
-        description: 'Solo or group of talented students showcasing their creative expressions and artistic abilities.',
+        description: 'Xpression competition Oraganised by Rotaract club of Deonar.',
         color: 'pink'
       },
       {
@@ -148,10 +148,10 @@ export class PrimaryAchievements implements OnInit, OnDestroy {
           {
             url: 'https://i.imghippo.com/files/LDu8132wcM.jpeg',
             title: 'Srujanotsav Winner',
-            description: 'Winner of Srujanotsav competition Ms. Aramya Auti got 2nd Prize.'
+            description: 'Srujanotsav The RGEMS FIESTA Oraganised by Rushikul Gurukul English Medium School.'
           }
         ],
-        description: 'Winner of Srujanotsav competition Ms. Aramya Auti got 2nd Prize.',
+        description: 'Srujanotsav The RGEMS FIESTA Oraganised by Rushikul Gurukul English Medium School.',
         color: 'red'
       },
       {
