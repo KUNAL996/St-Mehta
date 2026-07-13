@@ -40,24 +40,24 @@ export class PrimaryAchievements implements OnInit, OnDestroy {
     students: [
       {
         id: 8,
-        title: 'Got 3rd prize in Folk dance competition( Hojagiri ) Oraganised by Swami Shri Prempuri Ashram Trust, Babulnath.',
+        title: 'Winners of folk dance Hojagiri',
         images: [
           {
             url: 'https://i.postimg.cc/6QrTfZtN/winners-of-folk-dance-Hojagiri.jpg',
-            title: 'Got 3rd prize in Folk dance competition( Hojagiri ) Oraganised by Swami Shri Prempuri Ashram Trust, Babulnath.',
-            description: 'Celebrating the champions of the mesmerizing Hojagiri folk dance.'
+            title: 'Winners of folk dance Hojagiri',
+            description: 'Got 3rd prize in Folk dance competition( Hojagiri ) Oraganised by Swami Shri Prempuri Ashram Trust, Babulnath'
           }
         ],
-        description: 'Celebrating the champions of the mesmerizing Hojagiri folk dance.',
+        description: 'Got 3rd prize in Folk dance competition( Hojagiri ) Oraganised by Swami Shri Prempuri Ashram Trust, Babulnath',
         color: 'red'
       },
       {
         id: 10,
-        title: 'Got 1st consolation prize in Patriotic song competition Oraganised by Swami Shri Prempuri Ashram Trust, Babulnath',
+        title: 'Winners of Patriotic group singing',
         images: [
           {
             url: 'https://i.postimg.cc/mDTkXrg1/winners-of-patriotic-group-singing.jpg',
-            title: 'Got 1st consolation prize in Patriotic song competition Oraganised by Swami Shri Prempuri Ashram Trust, Babulnath',
+            title: 'Winners of Patriotic group singing',
             description: 'Celebrating the voices that filled the air with patriotic harmony.'
           }
         ],
@@ -79,16 +79,16 @@ export class PrimaryAchievements implements OnInit, OnDestroy {
       },
       {
         id: 6,
-        title: 'Got 3rd consolation prize in story telling Competition organised by BMC N Ward Competition',
+        title: 'N Ward Art Competition Winner',
         images: [
           {
             url: 'https://i.postimg.cc/g2QnwwbH/Winner-of-N-Ward-competition.jpg',
-            title: 'Got 3rd consolation prize in story telling Competition organised by BMC N Ward Competition',
+            title: 'N Ward Art Competition Winner',
             description: 'Awarded for outstanding creativity and artistic expression in the N Ward contest.'
           },
           {
             url: 'https://i.postimg.cc/zfh3TJJZ/WINNERS-OF-N-WARD-LEVEL.jpg',
-            title: 'Got 3rd consolation prize in story telling Competition organised by BMC N Ward Competition',
+            title: 'N Ward Level Competition Champions',
             description: 'Students secured top ranks at the N Ward level through dedication and talent.'
           }
         ],
@@ -97,11 +97,11 @@ export class PrimaryAchievements implements OnInit, OnDestroy {
       },
       {
         id: 7,
-        title: `Kala academy winners organised by Kala group Mumbai organised by all India art talent contest by Kala Children' Academy`,
+        title: 'Kala Academy Winners',
         images: [
           {
             url: 'https://i.postimg.cc/JncndPDp/WINNERS-OF-KALA-ACADEMY.jpg',
-            title: `Kala academy winners organised by Kala group Mumbai organised by all India art talent contest by Kala Children' Academy`,
+            title: 'Kala Academy Winners',
             description: 'Winners of the Kala Stambha Interclass Competition for showcasing talent in drawing, singing, handwriting, and essay writing.'
           }
         ],
@@ -110,31 +110,31 @@ export class PrimaryAchievements implements OnInit, OnDestroy {
       },
       {
         id: 9,
-        title: 'Xpression competition Oraganised by Rotaract Club of Deonar',
+        title: 'Xpression Creative Contest Winners',
         images: [
           {
             url: 'https://i.postimg.cc/zXfB0wJk/WINNERS-OF-XPRESSION-COMPETITION.jpg',
-            title: 'Xpression competition Oraganised by Rotaract Club of Deonar',
+            title: 'Xpression Competition Winners',
             description: 'Solo or group of talented students showcasing their creative expressions and artistic abilities.'
           },
           {
             url: 'https://i.postimg.cc/cCxHqwf0/WINNERS-OF-XPRESSION-COMPETITION-3.jpg',
-            title: 'Xpression competition Oraganised by Rotaract Club of Deonar',
+            title: 'Xpression Competition Winners',
             description: 'Solo or group of talented students showcasing their creative expressions and artistic abilities.'
           },
           {
             url: 'https://i.postimg.cc/RVb083hx/WINNERS-OF-XPRESSION.jpg',
-            title: 'Xpression competition Oraganised by Rotaract Club of Deonar',
+            title: 'Xpression Competition Winners',
             description: 'Solo or group of talented students showcasing their creative expressions and artistic abilities.'
           },
           {
             url: 'https://i.postimg.cc/3r1NXfHR/WINNER-OF-XPRESSION-COMPETITION-2.jpg',
-            title: 'Xpression competition Oraganised by Rotaract Club of Deonar',
+            title: 'Xpression Competition Winners',
             description: 'Solo or group of talented students showcasing their creative expressions and artistic abilities.'
           },
           {
             url: 'https://i.postimg.cc/fy8bMyvX/WINNER-OF-XPRESSION-COMPETITION.jpg',
-            title: 'Xpression competition Oraganised by Rotaract Club of Deonar',
+            title: 'Xpression Competition Winners',
             description: 'Solo or group of talented students showcasing their creative expressions and artistic abilities.'
           }
         ],
@@ -143,11 +143,11 @@ export class PrimaryAchievements implements OnInit, OnDestroy {
       },
       {
         id: 11,
-        title: 'Srujanotsav The RGEMS FIESTA Oraganised by Rushikul Gurukul English Medium School.',
+        title: 'Srujanotsav Winner',
         images: [
           {
             url: 'https://i.imghippo.com/files/LDu8132wcM.jpeg',
-            title: 'Srujanotsav The RGEMS FIESTA Oraganised by Rushikul Gurukul English Medium School.',
+            title: 'Srujanotsav Winner',
             description: 'Winner of Srujanotsav competition Ms. Aramya Auti got 2nd Prize.'
           }
         ],
