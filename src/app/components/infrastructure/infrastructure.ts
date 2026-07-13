@@ -116,7 +116,7 @@ export class Infrastructure implements OnInit, OnDestroy {
         {
           id: 1,
           name: '1st Floor Passageway',
-          images: ['assets/infrastructure/1stFloor.jpeg'],
+          images: ['assets/infrastructure/1stFloor.jpg'],
           details: 'Wide passageway connecting classrooms and facilities on the first floor.',
           donor: 'Donor : Chemical Industries Association',
           color: 'red'
@@ -140,7 +140,7 @@ export class Infrastructure implements OnInit, OnDestroy {
         {
           id: 4,
           name: 'Audio Visual Room',
-          images: ['assets/infrastructure/AV.jpeg'],
+          images: ['assets/infrastructure/AV.jpg'],
           details: 'Equipped with modern technology for interactive learning experiences.',
           donor: 'Donor : Literary Society',
           color: 'blue'
@@ -354,7 +354,7 @@ export class Infrastructure implements OnInit, OnDestroy {
         {
           id: 2,
           name: 'Turf',
-          images: ['assets/infrastructure/Turf2.jpeg'],
+          images: ['assets/infrastructure/Turf2.jpg'],
           details: 'Yoga and meditation area for students to relax and rejuvenate.',
           donor: 'Donor : Primary Education Trust',
           color: 'green'

@@ -42,7 +42,7 @@ export class PrePrimaryActivity {
         {
           id: 2,
           title: 'Matki Decoration for Janmashtami',
-          images: ['assets/preprimary/Activities/Curricular/Nursery/Matki Decoration.jpeg'],
+          images: ['assets/preprimary/Activities/Curricular/Nursery/Matki Decoration.jpg'],
           description: 'Creative card decoration activity themed around Janmashtami celebrations.',
           color: 'blue'
         },
@@ -95,14 +95,14 @@ export class PrePrimaryActivity {
         {
           id: 3,
           title: 'Role play - Community Helpers',
-          images: ['assets/preprimary/Activities/Curricular/Jr/Role play - Community Helpers.jpeg'],
+          images: ['assets/preprimary/Activities/Curricular/Jr/Role play - Community Helpers.jpg'],
           description: 'Role play - Community Helpers where children learn about the importance of community helpers.',
           color: 'red'
         },
         {
           id: 4,
           title: 'Learning Number sequencing',
-          images: ['assets/preprimary/Activities/Curricular/Jr/Learning Number sequencing.jpeg'],
+          images: ['assets/preprimary/Activities/Curricular/Jr/Learning Number sequencing.jpg'],
           description: 'Learning Number sequencing where children learn to sequence numbers in a given order.',
           color: 'blue'
         },
@@ -357,7 +357,7 @@ export class PrePrimaryActivity {
         {
           id: 2,
           title: 'Sports Day - Running Race',
-          images: ['assets/preprimary/Activities/ExtraCurricular/Jr/Sports Day - Running Race.jpeg'],
+          images: ['assets/preprimary/Activities/ExtraCurricular/Jr/Sports Day - Running Race.jpg'],
           description: 'Sports Day - Running Race where children participate in a running race.',
           color: 'red'
         },
@@ -380,8 +380,8 @@ export class PrePrimaryActivity {
         {
           id: 5,
           title: 'Picnic at Xenos Play Area',
-          images: ['assets/preprimary/Activities/ExtraCurricular/Jr/Xenos Play Area.jpeg',
-            'assets/preprimary/Activities/ExtraCurricular/Jr/Xenos Play Area 1.jpeg',
+          images: ['assets/preprimary/Activities/ExtraCurricular/Jr/Xenos Play Area.jpg',
+            'assets/preprimary/Activities/ExtraCurricular/Jr/Xenos Play Area 1.jpg',
             'assets/preprimary/Activities/ExtraCurricular/Jr/Xenos Play Area 2.jpeg',
             'assets/preprimary/Activities/ExtraCurricular/Jr/Xenos Play Area 3.jpg',
           ],
@@ -429,7 +429,7 @@ export class PrePrimaryActivity {
         {
           id: 5,
           title: 'Republic Day Celebration',
-          images: ['assets/preprimary/Activities/ExtraCurricular/Sr/Republic Day Celebration.jpeg'],
+          images: ['assets/preprimary/Activities/ExtraCurricular/Sr/Republic Day Celebration.jpg'],
           description: 'Patriotic activities and celebrations for Republic Day.',
           color: 'blue'
         },
