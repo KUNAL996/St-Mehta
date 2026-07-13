@@ -179,12 +179,12 @@ export class PSection {
       qualification: 'B.A., D.Ed.',
       image: 'assets/Primary/Staff/Mrs-Sneha-Gupta.jpg'
     },
-    {
-      name: 'Mrs. Chhaya A. Surse',
-      position: 'Asst. Teacher',
-      qualification: 'H.S.C., D.Ed.',
-      image: 'assets/Primary/Staff/Mrs-Chhaya-Surse.jpg'
-    },
+    // {
+    //   name: 'Mrs. Chhaya A. Surse',
+    //   position: 'Asst. Teacher',
+    //   qualification: 'H.S.C., D.Ed.',
+    //   image: 'assets/Primary/Staff/Mrs-Chhaya-Surse.jpg'
+    // },
     {
       name: 'Ms. Suman Sharma ',
       position: 'Asst. Teacher',
@@ -215,12 +215,12 @@ export class PSection {
       qualification: ' M.A., D.T.Ed.',
       image: 'assets/Primary/Staff/Mrs-Pallavi-Shinde.jpg'
     },
-    {
-      name: 'Ms. Pooja Jadhav',
-      position: 'Computer Teacher',
-      qualification: 'B.Com',
-      image: 'assets/Primary/Staff/Ms-Pooja-Jadhav.jpg'
-    },
+    // {
+    //   name: 'Ms. Pooja Jadhav',
+    //   position: 'Computer Teacher',
+    //   qualification: 'B.Com',
+    //   image: 'assets/Primary/Staff/Ms-Pooja-Jadhav.jpg'
+    // },
   ];
 
   nonTeachingStaff = [
@@ -242,12 +242,12 @@ export class PSection {
       // department: 'Security',
       image: 'assets/Primary/Staff/Mr-Aanant-Godambe.jpg'
     },
-    {
-      name: 'Mrs. Lata Bai',
-      position: 'Cleaning Staff',
-      // department: 'Maintenance',
-      image: 'assets/Primary/Staff/Mrs-Pushpa-Wankhede.jpg'
-    }
+    // {
+    //   name: 'Mrs. Lata Bai',
+    //   position: 'Cleaning Staff',
+    //   // department: 'Maintenance',
+    //   image: 'assets/Primary/Staff/Mrs-Pushpa-Wankhede.jpg'
+    // }
   ];
 
   ngOnInit(): void {
