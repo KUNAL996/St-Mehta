@@ -1,0 +1,392 @@
+/* Contact Page Styles */
+.contact-page {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 30vh;
+  background-image: url('https://i.postimg.cc/rFRNL20s/sprj-building-img.jpg');
+  background-size: cover;
+  background-position: center 80%;
+  background-attachment: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg,
+      rgba(44, 82, 130, 0.8) 0%,
+      rgba(44, 82, 130, 0.6) 50%,
+      rgba(44, 82, 130, 0.8) 100%);
+  backdrop-filter: blur(0px);
+}
+
+.hero-section:hover .hero-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(44, 82, 130, 0.7) 0%,
+    rgba(44, 82, 130, 0.5) 50%,
+    rgba(44, 82, 130, 0.7) 100%
+  );
+  transition: background 0.3s ease;
+}
+
+.activities-section:hover .tab-navigation {
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Main Content */
+.main-content {
+  background: #f8fafc;
+  padding: 5rem 0;
+}
+
+.info-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Section Headers */
+.section-header {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2c5282;
+  margin-bottom: 1rem;
+  position: relative;
+  justify-content: center;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: #d69e2e;
+  border-radius: 2px;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* Info Section */
+.info-section {
+  background: white;
+  max-width: 1000px;
+  width: 100%;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Details */
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: #f8fafc;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  width: 45%
+}
+
+.contact-item:hover {
+  background: linear-gradient(135deg, #c5dbf8, #f2f7fa);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contact-icon {
+  width: 3rem;
+  height: 3rem;
+  background: #2c5282;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.contact-content {
+  flex: 1;
+  width: 45%
+}
+
+.contact-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2c5282;
+  margin: 0 0 0.5rem 0;
+}
+
+.contact-text {
+  font-size: 1rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0 0 0.25rem 0;
+}
+
+.contact-link {
+  color: #2c5282;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #d69e2e;
+  text-decoration: underline;
+}
+
+.contact-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-row .contact-item {
+  flex: 1 1 45%;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .info-container {
+    padding: 0 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: 20vh;
+    min-height: 250px;
+    background-attachment: scroll;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .main-content {
+    padding: 3rem 0;
+  }
+
+  .info-container {
+    padding: 0 1.5rem;
+  }
+
+  .info-section {
+    padding: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .section-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .contact-item {
+    padding: 1.25rem;
+  }
+
+  .contact-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .contact-icon svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    height: 20vh;
+    min-height: 200px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .main-content {
+    padding: 2rem 0;
+  }
+
+  .info-container {
+    padding: 0 1rem;
+  }
+
+  .info-section {
+    padding: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .contact-icon {
+    margin: 0 auto;
+  }
+
+  .map-placeholder {
+    height: 250px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .info-section {
+    padding: 1.25rem;
+  }
+
+  .contact-details {
+    gap: 1.5rem;
+  }
+
+  .map-placeholder {
+    height: 200px;
+  }
+}
+
+/* Focus states for accessibility */
+.contact-link:focus {
+  outline: 2px solid #2c5282;
+  outline-offset: 2px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Print styles */
+@media print {
+
+  .hero-section,
+  .map-section {
+    display: none;
+  }
+
+  .info-section {
+    box-shadow: none;
+    border: 1px solid #e2e8f0;
+  }
+}

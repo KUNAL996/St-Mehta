@@ -1,0 +1,93 @@
+<div class="infrastructure-container">
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Infrastructure</h1>
+    </div>
+  </section>
+
+  <!-- Tabs Section -->
+  <section class="tabs-section">
+    <div class="tabs-container">
+      <!-- Main Tab Navigation -->
+      <div class="tab-navigation">
+        @for(tab of tabs; track tab){
+        <button class="tab-button" [class.active]="tab.active" (click)="selectTab(tab.id)">
+          {{ tab.label }}
+        </button>
+        }
+      </div>
+
+      <!-- Tab Content -->
+      <div class="tab-content">
+        <div class="content-wrapper">
+          <!-- Content Header -->
+          <div class="content-header">
+            <h2 class="content-title">{{ getCurrentContent().title }}</h2>
+          </div>
+
+          <!-- Rooms Grid -->
+          @if (getCurrentContent().rooms) {
+          <div class="rooms-grid">
+            @for (room of getCurrentContent().rooms; track room.id) {
+            <div class="room-card">
+              <div class="room-image-container">
+                @if (room.images.length === 1) {
+                <div class="single-image-container">
+                  <img [src]="room.images[0]" [alt]="room.name" class="room-image">
+                </div>
+                }
+
+                @if (room.images.length > 1) {
+                <div class="image-slider">
+                  <div class="slider-track"
+                    [style.transform]="'translateX(-' + (getCurrentSlideIndex(room.id) * 100) + '%)'">
+                    @for (image of room.images; track image) {
+                    <div class="slide">
+                      <img [src]="image" [alt]="room.name" class="room-image">
+                    </div>
+                    }
+                  </div>
+
+                  <button class="slider-arrow slider-arrow-left" (click)="previousSlide(room.id)"
+                    [disabled]="getCurrentSlideIndex(room.id) === 0">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                  </button>
+
+                  <button class="slider-arrow slider-arrow-right" (click)="nextSlide(room.id)"
+                    [disabled]="getCurrentSlideIndex(room.id) === room.images.length - 1">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="9,6 15,12 9,18"></polyline>
+                    </svg>
+                  </button>
+
+                  <div class="slide-indicators">
+                    @for (image of room.images; let idx = $index; track idx) {
+                    <button class="slide-indicator" [class.active]="idx === getCurrentSlideIndex(room.id)"
+                      (click)="goToSlide(room.id, idx)">
+                    </button>
+                    }
+                  </div>
+                </div>
+                }
+
+                <div class="room-badge" [class]="'badge-' + room.color">
+                  {{ room.name }}
+                </div>
+              </div>
+              <div class="room-content">
+                <h4 class="room-title">{{ room.details }}</h4>
+              </div>
+            </div>
+            }
+          </div>
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,294 @@
+<div class="home-container">
+    <div class="events-trigger" [class.active]="isEventsOpen()" (click)="toggleEvents()">
+        <div class="trigger-content">
+            <span class="trigger-icon">📅</span>
+            <span class="trigger-text">Events</span>
+        </div>
+        <div class="trigger-arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6-6 6z" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- Events Sidebar -->
+    <div class="events-sidebar" [class.open]="isEventsOpen()">
+        <div class="events-header">
+            <h3 class="events-title">Upcoming Events & Festivals</h3>
+            <button class="events-close" (click)="toggleEvents()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="events-filter">
+            <button class="filter-btn" [class.active]="currentFilter() === 'all'"
+                (click)="setFilter('all')">All</button>
+            <button class="filter-btn" [class.active]="currentFilter() === 'event'"
+                (click)="setFilter('event')">Events</button>
+            <button class="filter-btn" [class.active]="currentFilter() === 'festive'"
+                (click)="setFilter('festive')">Festive</button>
+        </div>
+
+        <div class="events-list">
+            @for (event of filteredEvents(); track event.id) {
+            <div class="event-item" [class]="'event-' + event.type">
+                <div class="event-date">
+                    <span class="event-day">{{ getDay(event.date) }}</span>
+                    <span class="event-month">{{ getMonthName(event.date) }}</span>
+                </div>
+                <div class="event-details">
+                    <h4 class="event-name">{{ event.name }}</h4>
+                    <span class="event-type-badge">{{ event.type === 'event' ? 'Event' : 'Festive' }}</span>
+                </div>
+            </div>
+            }
+            @if (filteredEvents().length === 0) {
+            <div class="no-events">
+                <div class="no-events-icon">📅</div>
+                <h4 class="no-events-title">No Upcoming Events</h4>
+                <p class="no-events-text">Check back soon for new events and celebrations!</p>
+            </div>
+            }
+        </div>
+    </div>
+
+    <!-- Events Sidebar Overlay -->
+    <div class="events-overlay" [class.active]="isEventsOpen()" (click)="toggleEvents()"></div>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="video-container">
+            <video #heroVideo class="hero-video" autoplay muted loop playsinline preload="auto">
+                <source src="assets/front.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENT COUNTERS -->
+    <!-- <section class="stats-section" id="stats-section">
+
+        <div class="stats-eyebrow">
+            Our Numbers Speak
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-item scroll-reveal" *ngFor="let stat of stats">
+
+                <div class="stat-ring-wrap">
+                    <svg class="stat-ring-svg" viewBox="0 0 84 84">
+                        <circle class="stat-ring-track" cx="42" cy="42" r="40" />
+                        <circle class="stat-ring-fill" cx="42" cy="42" r="40" />
+                    </svg>
+                    <div class="stat-icon-circle">
+                        <i class="fas" [ngClass]="stat.icon"></i>
+                    </div>
+                </div>
+
+                <div class="stat-number">
+                    <ng-container *ngIf="stat.end > 0; else staticLabel">
+                        <span>{{ stat.current | number }}</span>
+                        <span class="stat-suffix">{{ stat.suffix }}</span>
+                    </ng-container>
+                    <ng-template #staticLabel>
+                        <span class="stat-suffix" style="font-size:1.3rem;align-self:center">
+                            {{ stat.suffix }}
+                        </span>
+                    </ng-template>
+                </div>
+
+                <div class="stat-label">{{ stat.label }}</div>
+                <div class="stat-underbar"></div>
+
+            </div>
+        </div>
+    </section> -->
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-section">
+        <div class="section-container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title-center">Why Families Choose these School</h2>
+                <p class="section-subtitle">Five pillars that set us apart — and keep families choosing us, generation
+                    after generation</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card scroll-reveal" *ngFor="let feature of features; let i = index"
+                    [style.transition-delay]="(i * 0.1) + 's'">
+                    <div class="feature-icon-circle">
+                        <i class="fas {{ feature.icon }}"></i>
+                    </div>
+                    <h3 class="feature-title">{{ feature.title }}</h3>
+                    <p class="feature-desc">{{ feature.desc }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RECENT ACTIVITIES / NEWS -->
+    <section class="news-section">
+        <div class="section-container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title-center">What's Happening at School</h2>
+                <p class="section-subtitle">Stories of achievement, community, and growth from our vibrant campus</p>
+            </div>
+            <div class="news-grid">
+                <div class="news-card scroll-reveal" *ngFor="let item of news">
+                    <img class="news-image-area" [src]="item.image" [alt]="item.title">
+                    <div class="news-body">
+                        <div class="news-meta">
+                            <span class="category-badge" [ngClass]="item.categoryClass">{{ item.category }}</span>
+                        </div>
+                        <h3 class="news-title">{{ item.title }}</h3>
+                        <p class="news-excerpt">{{ item.excerpt }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Women's Empowerment Section -->
+    <!-- <section class="womens-empowerment-section">
+        <div class="section-container">
+            <div class="empowerment-content">
+                <div class="empowerment-images">
+                    <div class="image-slideshow">
+                        @for (img of empowermentImages; let i = $index; track img) {
+                        <div class="slideshow-img" [class.active]="i === currentEmpowermentSlide()">
+                            <img [src]="img" alt="Women empowerment">
+                        </div>
+                        }
+                    </div>
+                </div>
+                <div class="empowerment-text">
+                    <h2 class="section-title-center">Girl's Empowerment</h2>
+                    <div class="empowerment-points">
+                        @for (point of empowermentPoints; track point) {
+                        <div class="point-item">
+                            <div class="point-icon">✓</div>
+                            <p class="point-text">{{ point }}</p>
+                        </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Nurturing Curious Minds Section -->
+    <!-- <section class="nurturing-minds-section">
+        <div class="section-container">
+            <h2 class="section-title-center">Nurturing Curious Minds Inspiring Bright Future</h2>
+            <div class="nurturing-content">
+                <div class="nurturing-text">
+                    <div class="nurturing-points">
+                        @for (point of nurturingPoints; track point) {
+                        <div class="point-item">
+                            <div class="point-icon">★</div>
+                            <p class="point-text">{{ point }}</p>
+                        </div>
+                        }
+                    </div>
+                </div>
+                <div class="nurturing-images">
+                    <div class="cloud-design">
+                        <div class="image-slideshow">
+                            @for (img of nurturingImages; let i = $index; track img) {
+                            <div class="slideshow-img" [class.active]="i === currentNurturingSlide()">
+                                <img [src]="img" alt="Nurturing minds">
+                            </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Core Development Areas Section -->
+    <!-- <section class="core-development-section">
+        <div class="section-container">
+            <h2 class="section-title-center">Core Development Areas</h2>
+            <div class="core-content">
+                <div class="core-left">
+                    @for (point of coreLeftPoints; track point) {
+                    <div class="core-point">
+                        <div class="core-icon">◆</div>
+                        <div class="core-text">
+                            <h4 class="core-heading">{{ point.title }}</h4>
+                            <p class="core-description">{{ point.description }}</p>
+                        </div>
+                    </div>
+                    }
+                </div>
+                <div class="core-center">
+                    <img [src]="centerGirlImage" alt="Empowered student" class="center-girl-img">
+                </div>
+                <div class="core-right">
+                    @for (point of coreRightPoints; track point) {
+                    <div class="core-point">
+                        <div class="core-icon">◆</div>
+                        <div class="core-text">
+                            <h4 class="core-heading">{{ point.title }}</h4>
+                            <p class="core-description">{{ point.description }}</p>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="testimonials-container">
+            <div class="section-header">
+                <h2 class="section-title-center">What Our Community Says</h2>
+                <p class="section-subtitle">Hear from our students, teachers, parents, and alumni</p>
+            </div>
+
+            <div class="testimonial-slider" [class]="'dir-' + slideDirection()">
+                @for (testimonial of testimonials; let i = $index; track testimonial) {
+                <div class="testimonial-card" [class.active]="i === currentTestimonial()">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">{{ testimonial.text }}</p>
+                        <div class="testimonial-author">
+                            <img [src]="testimonial.image" [alt]="testimonial.name" class="author-image">
+                            <div class="author-info">
+                                <h4 class="author-name">{{ testimonial.name }}</h4>
+                                <p class="author-role">{{ testimonial.role }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                }
+
+                <div class="testimonial-controls">
+                    <button class="testimonial-nav prev" (click)="prevTestimonial()" aria-label="Previous testimonial">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                        </svg>
+                    </button>
+
+                    <div class="testimonial-indicators">
+                        @for (testimonial of testimonials; let i = $index; track testimonial) {
+                        <button class="indicator" [class.active]="i === currentTestimonial()"
+                            (click)="goToTestimonial(i)"></button>
+                        }
+                    </div>
+
+                    <button class="testimonial-nav next" (click)="nextTestimonial()" aria-label="Next testimonial">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+<app-footer></app-footer>

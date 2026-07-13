@@ -1,0 +1,114 @@
+<div class="activities-container">
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Activities</h1>
+    </div>
+  </section>
+
+  <section class="activities-section">
+    <div class="activities-container-inner">
+      <div class="tab-navigation">
+        @for (tab of tabs; track tab.id) {
+        <button class="tab-button" [class.active]="tab.active" (click)="selectTab(tab.id)">
+          {{ tab.label }}
+        </button>
+        }
+      </div>
+
+      <div class="sub-tab-navigation">
+        @for (subTab of subTabs; track subTab.id) {
+        <button class="sub-tab-button"
+                [class.active]="activeSubTab[activeTab] === subTab.id"
+                (click)="selectSubTab(subTab.id)">
+          {{ subTab.label }}
+        </button>
+        }
+      </div>
+
+      @if (activeTab === 'pre-primary') {
+      <div class="grade-level-navigation">
+        @for (gradeLevel of gradeLevels; track gradeLevel.id) {
+        <button class="grade-level-button"
+                [class.active]="activeGradeLevel[activeSubTab[activeTab]] === gradeLevel.id"
+                (click)="selectGradeLevel(gradeLevel.id)">
+          {{ gradeLevel.label }}
+        </button>
+        }
+      </div>
+      }
+
+      <div class="section-header">
+        <h2 class="section-title">{{ getCurrentActivities().title }}</h2>
+        <!-- <p class="section-subtitle">{{ activeSubTab[activeTab] | titlecase }} Activities</p> -->
+        <!-- @if (activeTab === 'pre-primary') {
+        <p class="grade-subtitle">{{ activeGradeLevel[activeSubTab[activeTab]] | titlecase }}</p>
+        } -->
+      </div>
+
+      <div class="activities-grid">
+        @for (activity of getCurrentActivities().activities; let i = $index; track activity.id) {
+        <div class="activity-card" [attr.data-aos]="'fade-up'" [attr.data-aos-delay]="i * 100">
+
+          <div class="activity-image-container">
+            @if (activity.images.length === 1) {
+            <div class="single-image-container">
+              <img [src]="activity.images[0]" [alt]="activity.title" class="activity-image">
+              <div class="image-overlay"></div>
+            </div>
+            }
+
+            @if (activity.images.length > 1) {
+            <div class="image-slider">
+
+              <div class="slider-track"
+                [style.transform]="'translateX(-' + (getCurrentSlideIndex(activity.id) * 100) + '%)'">
+                @for (image of activity.images; track image) {
+                <div class="slide">
+                  <img [src]="image" [alt]="activity.title" class="activity-image">
+                </div>
+                }
+              </div>
+
+              <button class="slider-arrow slider-arrow-left" (click)="previousSlide(activity.id)"
+                [disabled]="getCurrentSlideIndex(activity.id) === 0">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="15,18 9,12 15,6"></polyline>
+                </svg>
+              </button>
+
+              <button class="slider-arrow slider-arrow-right" (click)="nextSlide(activity.id)"
+                [disabled]="getCurrentSlideIndex(activity.id) === activity.images.length - 1">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9,6 15,12 9,18"></polyline>
+                </svg>
+              </button>
+
+              <div class="slide-indicators">
+                @for (image of activity.images; let idx = $index; track idx) {
+                <button class="slide-indicator" [class.active]="idx === getCurrentSlideIndex(activity.id)"
+                  (click)="goToSlide(activity.id, idx)">
+                </button>
+                }
+              </div>
+
+              <div class="image-overlay"></div>
+            </div>
+            }
+          </div>
+
+          <div class="activity-content">
+            <h3 class="activity-title">{{ activity.title }}</h3>
+            <p class="activity-description">{{ activity.description }}</p>
+          </div>
+
+          <div class="activity-footer">
+            <div class="activity-underline" [class]="'underline-' + activity.color"></div>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
+  </section>
+</div>
+<app-footer></app-footer>

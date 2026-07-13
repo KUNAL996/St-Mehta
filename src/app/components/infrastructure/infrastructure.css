@@ -1,0 +1,717 @@
+.infrastructure-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 30vh;
+  background-image: url('https://i.postimg.cc/XqMX4502/Skit-Importance-of-the-English-Language-Club.jpg');
+  background-size: cover;
+  background-position: center 40%;
+  background-attachment: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg,
+      rgba(44, 82, 130, 0.8) 0%,
+      rgba(44, 82, 130, 0.6) 50%,
+      rgba(44, 82, 130, 0.8) 100%);
+  backdrop-filter: blur(0px);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Tabs Section */
+.tabs-section {
+  background: #f8fafc;
+  padding: 4rem 0;
+  min-height: 70vh;
+}
+
+.tabs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Main Tab Navigation */
+.tab-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  background: white;
+  padding: 1rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tab-button {
+  padding: 1rem 1rem;
+  border: none;
+  background: transparent;
+  color: #64748b;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.tab-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.tab-button:hover::before {
+  left: 100%;
+}
+
+.tab-button:hover {
+  color: #2c5282;
+  background: #ebf8ff;
+  transform: translateY(-2px);
+}
+
+.tab-button.active {
+  background: #d69e2e;
+  color: white;
+  box-shadow: 0 4px 15px rgba(214, 158, 46, 0.3);
+  transform: translateY(-2px);
+}
+
+.tab-button.active:hover {
+  background: #c7901e;
+  box-shadow: 0 6px 20px rgba(214, 158, 46, 0.4);
+}
+
+/* Tab Content */
+.tab-content {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.content-wrapper {
+  padding: 3rem;
+}
+
+.content-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.content-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c5282;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.content-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: #d69e2e;
+  border-radius: 2px;
+}
+
+/* Floor Information Grid */
+.floor-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.floor-info-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #ebf8ff 0%, #f0f9ff 100%);
+  border-radius: 15px;
+  border-left: 5px solid #2c5282;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.floor-info-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(44, 82, 130, 0.1), transparent);
+  transition: left 0.5s;
+}
+
+.floor-info-card:hover::before {
+  left: 100%;
+}
+
+.floor-info-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(44, 82, 130, 0.15);
+}
+
+.floor-badge {
+  background: #2c5282;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  min-width: 80px;
+  text-align: center;
+}
+
+.floor-details {
+  flex: 1;
+}
+
+.floor-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0 0 0.5rem 0;
+}
+
+.floor-donors {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.content-description {
+  font-size: 1.1rem;
+  color: #64748b;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 2rem auto 0;
+  text-align: justify;
+}
+
+/* Rooms Grid */
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.room-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  height: 400px;
+  width: 500px;
+}
+
+.room-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+.room-image-container {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.single-image-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.room-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.room-card:hover .room-image {
+  transform: scale(1.05);
+}
+
+/* Image Slider (multi-image rooms) */
+.image-slider {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.slider-arrow:hover:not(:disabled) {
+  background: white;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.slider-arrow:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.slider-arrow svg {
+  width: 18px;
+  height: 18px;
+  color: #2c5282;
+}
+
+.slider-arrow-left {
+  left: 12px;
+}
+
+.slider-arrow-right {
+  right: 12px;
+}
+
+.slide-indicators {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.slide-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slide-indicator.active {
+  background: white;
+  transform: scale(1.2);
+}
+
+.slide-indicator:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.room-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: white;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 15;
+}
+
+.badge-pink {
+  background: linear-gradient(135deg, #ec4899, #f472b6);
+}
+
+.badge-green {
+  background: linear-gradient(135deg, #10b981, #34d399);
+}
+
+.badge-orange {
+  background: linear-gradient(135deg, #f59e0b, #fbbf24);
+}
+
+.badge-yellow {
+  background: linear-gradient(135deg, #eab308, #facc15);
+}
+
+.badge-blue {
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+}
+
+.badge-purple {
+  background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+}
+
+.badge-red {
+  background: linear-gradient(135deg, #ef4444, #f87171);
+}
+
+.badge-brown {
+  background: linear-gradient(135deg, #a3a3a3, #d4d4d4);
+}
+
+.room-content {
+  padding: 1.5rem;
+}
+
+.room-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.4;
+}
+
+.room-donor {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin: 0;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .tabs-container {
+    padding: 0 1.5rem;
+  }
+
+  .content-wrapper {
+    padding: 2rem;
+  }
+
+  .content-title {
+    font-size: 2rem;
+  }
+
+  .floor-info-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  .room-card {
+    width: 420px;
+    height: 400px
+  }
+
+  .rooms-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 920px) {
+  .hero-section {
+    height: 20vh;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .tab-navigation {
+    padding: 0.5rem;
+    border-radius: 15px;
+  }
+
+  .tab-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .content-wrapper {
+    padding: 1.5rem;
+  }
+
+  .content-title {
+    font-size: 1.8rem;
+  }
+
+  .content-description {
+    font-size: 1rem;
+  }
+
+  .floor-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .floor-info-card {
+    padding: 1rem;
+  }
+
+  .rooms-grid {
+    display: grid;
+    grid-template-columns: 2, 1fr;
+    gap: 2rem;
+  }
+
+  .room-card {
+    width: 350px;
+    max-width: 400px;
+    height: 300px
+  }
+
+  .room-image-container {
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: 20vh;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .tab-navigation {
+    padding: 0.5rem;
+    border-radius: 15px;
+  }
+
+  .tab-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .content-wrapper {
+    padding: 1.5rem;
+  }
+
+  .content-title {
+    font-size: 1.8rem;
+  }
+
+  .content-description {
+    font-size: 1rem;
+  }
+
+  .floor-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .floor-info-card {
+    padding: 1rem;
+  }
+
+  .rooms-grid {
+    display: grid;
+    grid-template-columns: 2, 1fr;
+    gap: 2rem;
+  }
+
+  .room-card {
+    width: 98%;
+    height: 300px
+  }
+
+  .room-image-container {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    height: 20vh;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .tabs-section {
+    padding: 2rem 0;
+  }
+
+  .tabs-container {
+    padding: 0 1rem;
+  }
+
+  .tab-navigation {
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.5rem;
+  }
+
+  .tab-button {
+    padding: 0.55rem 0.8rem;
+    border-radius: 8px;
+
+  }
+
+  .content-wrapper {
+    padding: 1rem;
+  }
+
+  .content-title {
+    font-size: 1.5rem;
+  }
+
+  .floor-info-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .floor-badge {
+    min-width: auto;
+  }
+
+  .room-card {
+    width: 98%;
+    height: 250px;
+  }
+
+  .room-image-container {
+    height: 160px;
+  }
+
+  .room-content {
+    padding: 1rem;
+  }
+
+  .room-title {
+    font-size: 1rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Focus states for accessibility */
+.tab-button:focus {
+  outline: 2px solid #2c5282;
+  outline-offset: 2px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Loading animation for tab content */
+.tab-content {
+  animation: slideIn 0.4s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Hover effects for better UX */
+.hero-section:hover .hero-overlay {
+  background: linear-gradient(135deg,
+      rgba(44, 82, 130, 0.7) 0%,
+      rgba(44, 82, 130, 0.5) 50%,
+      rgba(44, 82, 130, 0.7) 100%);
+  transition: background 0.3s ease;
+}
+
+.tabs-section:hover .tab-navigation {
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease;
+}

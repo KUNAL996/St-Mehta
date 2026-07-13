@@ -1,0 +1,296 @@
+<div class="pp-section-container">
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Shri Rokadia Hanuman Temple Trust Pre-Primary School</h1>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="content-section">
+    <div class="content-container">
+      <!-- Left Side - Content -->
+      <div class="content-left">
+        <div class="content-header">
+          <h2 class="section-title">Pre Primary Seciton</h2>
+          <p class="section-description">
+            Welcome to Shri Rokadia Hanuman Temple Trust English Pre Primary School! We're a
+            trusted institution with a rich history of providing quality education to
+            girls since 1979. At the Pre-Primary school section, we
+            cultivate a safe and stimulating environment for girls.
+          </p>
+        </div>
+
+        <div class="programs-section">
+          <h3 class="programs-title">Admission Age Criteria & School timing</h3>
+          <div class="programs-list">
+            <div class="program-item">
+              <span class="program-label">Age :</span>
+              <span class="program-value">2.5 to 6 years</span>
+            </div>
+            <div class="program-item">
+              <span class="program-label">Play Group :</span>
+              <span class="program-value">2.5 years</span>
+            </div>
+            <div class="program-item">
+              <span class="program-label">Nursery :</span>
+              <span class="program-value">3.5 years</span>
+            </div>
+            <div class="program-item">
+              <span class="program-label">Junior KG :</span>
+              <span class="program-value">4.5 years</span>
+            </div>
+            <div class="program-item">
+              <span class="program-label">Senior KG :</span>
+              <span class="program-value">5.5 years</span>
+            </div>
+            <div class="program-item">
+              <span class="program-label">School Timing :</span>
+              <span class="program-value">Monday to Friday 9 AM To 11 AM <strong class="program-label">(Play
+                  Group)</strong></span>
+            </div>
+            <div class="program-item">
+              <span class="program-label"></span>
+              <span class="program-value">Monday to Friday 8 AM To 11 AM <strong class="program-label">(Nursery
+                  to Sr.KG)</strong></span>
+            </div>
+            <div class="program-item timing"></div>
+            <div class="program-item holiday">
+              <span class="program-value">(Saturday & Sunday Holiday)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side - Slideshow -->
+      <div class="content-right">
+        <div class="slideshow-container" (mouseenter)="pauseSlideshow()" (mouseleave)="resumeSlideshow()">
+          <div class="slides-wrapper">
+            @for (slide of slides; let i = $index; track slide) {
+            <div class="slide" [class.active]="i === currentSlide">
+              <img [src]="slide.image" [alt]="slide.alt" class="slide-image">
+            </div>
+            }
+          </div>
+
+          <!-- Navigation Arrows -->
+          <button class="nav-arrow prev-arrow" (click)="prevSlide()" aria-label="Previous slide">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+            </svg>
+          </button>
+          <button class="nav-arrow next-arrow" (click)="nextSlide()" aria-label="Next slide">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+            </svg>
+          </button>
+
+          <!-- Slide Indicators -->
+          <div class="slide-indicators">
+            @for (slide of slides; let i = $index; track slide) {
+            <button class="indicator" [class.active]="i === currentSlide" (click)="goToSlide(i)"
+              [attr.aria-label]="'Go to slide ' + (i + 1)">
+            </button>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Play Learn Grow Section -->
+  <!-- <section class="play-learn-grow-section">
+    <div class="play-learn-container">
+      <div class="play-learn-header">
+        <h2 class="play-learn-title">"Play, Learn and Grow"</h2>
+        <p class="play-learn-description">
+          We create learning experiences that go beyond academics,encouraging students overall growth.Through various
+          activities we make education engaging and enjoyable so that children remain interested and never get bored.
+      </div>
+
+      <div class="activities-grid">
+        @for (activity of activities; let i = $index; track activity) {
+        <div class="activity-wrapper">
+          <div class="activity-item" (click)="openActivityModal(activity)">
+            <span class="activity-number">{{ i + 1 }}.</span>
+            <span class="activity-text">{{ activity.name }}</span>
+            <span class="activity-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z" />
+              </svg>
+            </span>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Call to Action Section -->
+  <section class="cta-section">
+    <div class="cta-container">
+      <p class="cta-text">
+        In every girl lies the strength to change the world,<br>
+        We nurture that spark into a shining flame.
+      </p>
+    </div>
+  </section>
+
+  <!-- Principal Message Section -->
+  <section class="principal-section">
+    <div class="principal-container">
+      <div class="principal-content">
+        <!-- Principal Image -->
+        <div class="principal-image-container">
+          <img src="assets/preprimary/Staff/Principal Mrs-Jyothi-Dinesh.jpg"
+            class="principal-image">
+        </div>
+
+        <!-- Principal Info -->
+        <div class="principal-info">
+          <h2 class="principal-name">Mrs. Jyothi Dinesh</h2>
+          <h3 class="principal-title">Principal, Shri Rokadia Hanuman Temple Trust Pre-Primary Section</h3>
+          <p class="principal-qualification">(MA BEd)</p>
+
+          <div class="principal-message">
+            <p class="message-paragraph">
+              Preschool education is <strong> like the first colourful stroke on a blank canvas,</strong> laying the
+              foundation for a child's lifelong journey. We at Priti’s Playgroup &amp; D.D. Meghani Nursery &amp;
+              Shri. R.H.T.T Pre-Primary understand the immense importance of preschool education and its profound
+              impact on a child's growth and development. Hence we provide an environment for children to explore,
+              imagine and express themselves freely.
+              <br><br>
+              Through play- way based activities, theme days, role play, stories, art and songs, we help children
+              develop not just basic skills, but also confidence, curiosity and compassion. This year we have introduced
+              Helen O’ Grady International Speech and Drama Classes for the Senior KG students. The main aim is to
+              develop communication and interactive skills through drama techniques.
+              <br><br>
+              Our dedicated teachers guide each child with patience and love, ensuring that learning becomes a natural
+              and delightful process. I also extend my heartfelt gratitude to all the KG parents for their support,
+              involvement and trust which means the word to us.
+              <br><br>
+              <strong>“Children are like flowers in a garden – each unique, each blooming at their own pace , adding
+                beauty, colour and fragrance to our school family”</strong> Thus together let us nurture their roots
+              with love, water their minds with knowledge and provide them the sunshine of encouragement so they grow
+              into confident, compassionate and capable individuals
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Staff Section -->
+  <section class="staff-section">
+    <div class="staff-container">
+      <h2 class="staff-main-title">Our Staff</h2>
+
+      <!-- Staff Tabs -->
+      <div class="staff-tabs">
+        <button class="staff-tab-button" [class.active]="activeStaffTab === 'teaching'"
+          (click)="setActiveStaffTab('teaching')">
+          Teaching Staff
+        </button>
+        <button class="staff-tab-button" [class.active]="activeStaffTab === 'non-teaching'"
+          (click)="setActiveStaffTab('non-teaching')">
+          Non-Teaching Staff
+        </button>
+      </div>
+
+      <!-- Staff Content -->
+      <div class="staff-content">
+        <!-- Teaching Staff -->
+        @if (activeStaffTab === 'teaching') {
+        <div class="staff-grid">
+          @for (teacher of teachingStaff; track teacher) {
+          <div class="staff-card">
+            <div class="staff-image-container">
+              <img [src]="teacher.image" [alt]="teacher.name" class="staff-image">
+            </div>
+            <div class="staff-details">
+              <h3 class="staff-name">{{ teacher.name }}</h3>
+              <p class="staff-position">Position: {{ teacher.position }}</p>
+              @if (teacher.qualification) {
+              <p class="staff-qualification">Qualification: {{ teacher.qualification }}</p>
+              }
+            </div>
+          </div>
+          }
+        </div>
+        }
+
+        <!-- Non-Teaching Staff -->
+        @if (activeStaffTab === 'non-teaching') {
+        <div class="staff-grid">
+          @for (staff of nonTeachingStaff; track staff) {
+          <div class="staff-card">
+            <div class="staff-image-container">
+              <img [src]="staff.image" [alt]="staff.name" class="staff-image">
+            </div>
+            <div class="staff-details">
+              <h3 class="staff-name">{{ staff.name }}</h3>
+              <p class="staff-position">Position: {{ staff.position }}</p>
+              @if (staff.qualification) {
+              <p class="staff-department">Qualification: {{ staff.qualification}}</p>
+              }
+            </div>
+          </div>
+          }
+        </div>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Activity Image Modal -->
+  @if (isModalOpen && selectedActivity) {
+  <div class="modal-backdrop" (click)="closeActivityModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <button class="modal-close" (click)="closeActivityModal()" aria-label="Close modal">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+        </svg>
+      </button>
+      <div class="modal-header">
+        <h3 class="modal-title">{{ selectedActivity.name }}</h3>
+      </div>
+      <div class="modal-split-body">
+        <div class="modal-image-section">
+          <div class="modal-slideshow">
+            @for (img of selectedActivity.images; let i = $index; track img) {
+            <div class="modal-slide" [class.active]="i === modalImageIndex">
+              <img [src]="img" [alt]="selectedActivity.name" class="modal-slide-img">
+            </div>
+            }
+            @if (selectedActivity.images.length > 1) {
+            <button class="modal-nav-arrow modal-prev" (click)="modalPrevImage()" aria-label="Previous image">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+              </svg>
+            </button>
+            <button class="modal-nav-arrow modal-next" (click)="modalNextImage()" aria-label="Next image">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+              </svg>
+            </button>
+            <div class="modal-image-indicators">
+              @for (img of selectedActivity.images; let i = $index; track img) {
+              <button class="modal-indicator" [class.active]="i === modalImageIndex"
+                (click)="goToModalImage(i)"></button>
+              }
+            </div>
+            }
+          </div>
+        </div>
+        <div class="modal-body">
+          <p class="modal-description">{{ selectedActivity.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  }
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,97 @@
+<div class="activities-container">
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Primary Achievements</h1>
+    </div>
+  </section>
+
+  <section class="activities-section">
+    <div class="activities-container-inner">
+
+      <div class="subsection-navigation">
+        @for (subSection of subSections; track subSection.id) {
+          <button
+            class="subsection-button"
+            [class.active]="subSection.active"
+            (click)="selectSubSection(subSection.id)">
+            {{ subSection.label }}
+          </button>
+        }
+      </div>
+
+      <div class="activities-grid">
+        @for (activity of getCurrentActivities(); let i = $index; track activity.id + '-' + i) {
+          <div class="activity-card">
+            <div class="activity-image-container">
+
+              @if (activity.images.length === 1) {
+                <div class="single-image-container">
+                  <img [src]="activity.images[0].url" [alt]="activity.images[0].title" class="activity-image">
+                  <div class="image-overlay"></div>
+                </div>
+              }
+
+              @if (activity.images.length > 1) {
+                <div class="image-slider"
+                  (mouseenter)="pauseSlideshow(activity.id, i)"
+                  (mouseleave)="resumeSlideshow(activity.id, i)">
+                  <div class="slider-track"
+                    [style.transform]="'translateX(-' + (getCurrentSlideIndex(activity.id, i) * 100) + '%)'">
+                    @for (image of activity.images; track image) {
+                      <div class="slide">
+                        <img [src]="image.url" [alt]="image.title" class="activity-image">
+                      </div>
+                    }
+                  </div>
+
+                  <button class="slider-arrow slider-arrow-left"
+                    (click)="previousSlide(activity.id, i)"
+                    [disabled]="getCurrentSlideIndex(activity.id, i) === 0">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                  </button>
+
+                  <button class="slider-arrow slider-arrow-right"
+                    (click)="nextSlide(activity.id, i)"
+                    [disabled]="getCurrentSlideIndex(activity.id, i) === activity.images.length - 1">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="9,6 15,12 9,18"></polyline>
+                    </svg>
+                  </button>
+
+                  <div class="slide-indicators">
+                    @for (image of activity.images; let idx = $index; track idx) {
+                      <button class="slide-indicator"
+                        [class.active]="idx === getCurrentSlideIndex(activity.id, i)"
+                        (click)="goToSlide(activity.id, i, idx)">
+                      </button>
+                    }
+                  </div>
+
+                  <div class="image-overlay"></div>
+                </div>
+              }
+            </div>
+
+            <div class="activity-content">
+              <h3 class="activity-title">
+                {{ activity.images.length > 1 ? getCurrentSlideContent(activity.id, i)?.title : activity.title }}
+              </h3>
+              <p class="activity-description">
+                {{ activity.images.length > 1 ? getCurrentSlideContent(activity.id, i)?.description : activity.description }}
+              </p>
+            </div>
+
+            <div class="activity-footer">
+              <div class="activity-underline" [class]="'underline-' + activity.color"></div>
+            </div>
+          </div>
+        }
+      </div>
+
+    </div>
+  </section>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,75 @@
+<div class="school-history-container">
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">About Management</h1>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <div class="content-container">
+            <!-- Left Side - Text Content -->
+            <div class="content-left">
+                <h2 class="section-title">About Management</h2>
+
+                <div class="content-text">
+                    <p class="content-paragraph">
+                       <b>In the 1920s, female literacy was one of society's lowest priorities. Our founders
+                        believed otherwise — that educating a girl educates two families, with the benefits
+                        passing down to the next generation. This conviction shaped a legacy built step by step:</b>
+                    </p>
+
+                    <ul class="content-list">
+                        <li>Inspired by <b>Jain Saint, Bharat Ratna awardee Shri Pandit Ratnachandraji Maharaj</b>, the founders set out to provide free education to girls</li>
+                        <li><b>1924</b> – Ratnachintamani school established with an initial enrolment of just five girls</li>
+                        <li>The school was later named <b>Shri Pandit Ratnachandraji Jain (SPRJ) Kanyashala</b></li>
+                        <li><b>1944</b> – The <b>SPRJ Kanyashala Trust</b> established to raise funds and widen the scope of this cause</li>
+                        <li>For nearly <b>nine decades</b>, the trust has worked in education and women welfare, especially for needy and underprivileged women</li>
+                    </ul>
+                </div>
+
+                <p class="content-paragraph link-paragraph">
+                    Know more about SPRJ Kanyashala Trust here 👉
+                    <a href="https://sprjktrust.org/" target="_blank" class="external-link">
+                        https://sprjktrust.org/
+                    </a>
+                </p>
+            </div>
+
+            <!-- Right Side - Image -->
+            <div class="content-right">
+                <div class="image-container">
+                    <img src="assets/TRUST.png" alt="School Building" class="school-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Present Board of Trustees Section -->
+    <section class="trustees-section">
+        <div class="trustees-container">
+            <h2 class="trustees-title">Present Board of Trustees</h2>
+            <p class="trustees-subtitle">
+                The dedicated leaders guiding our school in its mission of
+                educating girls and empowering women.
+            </p>
+
+            <div class="trustees-grid">
+                @for (trustee of trustees; track trustee.name) {
+                    <div class="trustee-card">
+                        <div class="trustee-image-wrapper">
+                            <img [src]="trustee.image" [alt]="trustee.name" class="trustee-image">
+                        </div>
+                        <div class="trustee-info">
+                            <h3 class="trustee-name">{{ trustee.name }}</h3>
+                            <p class="trustee-role">{{ trustee.role }}</p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+</div>
+<app-footer></app-footer>

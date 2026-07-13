@@ -1,0 +1,118 @@
+<div class="activities-container">
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Achievements</h1>
+    </div>
+  </section>
+
+  <!-- Activities Content Section -->
+  <section class="activities-section">
+    <div class="activities-container-inner">
+      <!-- Main Tab Navigation -->
+      <div class="tab-navigation">
+        @for (tab of tabs; track tab.id) {
+        <button class="tab-button" [class.active]="tab.active" (click)="selectTab(tab.id)">
+          {{ tab.label }}
+        </button>
+        }
+      </div>
+
+      <!-- Sub-Section Navigation -->
+      <div class="subsection-navigation">
+        @for (subSection of subSections; track subSection.id) {
+        @if (isSubSectionAvailable(subSection.id)) {
+        <button class="subsection-button" [class.active]="subSection.active" (click)="selectSubSection(subSection.id)">
+          {{ subSection.label }}
+        </button>
+        }
+        }
+      </div>
+
+      <!-- Section Title -->
+      <!-- <div class="section-header">
+        <h2 class="section-title">{{ getCurrentActivities().title }}</h2>
+      </div> -->
+
+      <!-- Activities Grid -->
+      <div class="activities-grid">
+        @for (activity of getCurrentActivities().activities; let i = $index; track activity.id) {
+        <div class="activity-card" [attr.data-aos]="'fade-up'" [attr.data-aos-delay]="i * 100">
+
+          <!-- Activity Image Container -->
+          <div class="activity-image-container">
+            <!-- Single Image Display -->
+            @if (activity.images.length === 1) {
+            <div class="single-image-container">
+              <img [src]="activity.images[0].url" [alt]="activity.images[0].title" class="activity-image">
+              <div class="image-overlay"></div>
+            </div>
+            }
+
+            <!-- Image Slider for Multiple Images -->
+            @if (activity.images.length > 1) {
+            <div class="image-slider" (mouseenter)="pauseSlideshow(activity.id)"
+              (mouseleave)="resumeSlideshow(activity.id)">
+
+              <!-- Slider Images -->
+              <div class="slider-track"
+                [style.transform]="'translateX(-' + (getCurrentSlideIndex(activity.id) * 100) + '%)'">
+                @for (image of activity.images; track image) {
+                <div class="slide">
+                  <img [src]="image.url" [alt]="image.title" class="activity-image">
+                </div>
+                }
+              </div>
+
+              <!-- Navigation Arrows -->
+              <button class="slider-arrow slider-arrow-left" (click)="previousSlide(activity.id)"
+                [disabled]="getCurrentSlideIndex(activity.id) === 0">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="15,18 9,12 15,6"></polyline>
+                </svg>
+              </button>
+
+              <button class="slider-arrow slider-arrow-right" (click)="nextSlide(activity.id)"
+                [disabled]="getCurrentSlideIndex(activity.id) === activity.images.length - 1">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9,6 15,12 9,18"></polyline>
+                </svg>
+              </button>
+
+              <!-- Slide Indicators -->
+              <div class="slide-indicators">
+                @for (image of activity.images; let idx = $index; track idx) {
+                <button class="slide-indicator" [class.active]="idx === getCurrentSlideIndex(activity.id)"
+                  (click)="goToSlide(activity.id, idx)">
+                </button>
+                }
+              </div>
+
+              <!-- Image Overlay -->
+              <div class="image-overlay"></div>
+            </div>
+            }
+          </div>
+
+          <!-- Activity Content -->
+          <div class="activity-content">
+            <h3 class="activity-title">
+              {{ activity.images.length > 1 ? getCurrentSlideContent(activity.id)?.title : activity.title }}
+            </h3>
+            <p class="activity-description">
+              {{ activity.images.length > 1 ? getCurrentSlideContent(activity.id)?.description : activity.description }}
+            </p>
+          </div>
+
+          <!-- Activity Footer -->
+          <div class="activity-footer">
+            <div class="activity-underline" [class]="'underline-' + activity.color"></div>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
+  </section>
+</div>
+<app-footer></app-footer>

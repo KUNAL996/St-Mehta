@@ -1,0 +1,279 @@
+<header class="navbar" [class.scrolled]="isScrolled">
+  <div class="navbar-container">
+    <!-- Logo Section -->
+    <div class="logo-section">
+      <div class="logo-wrapper">
+        <img src="assets/logo1.png" alt="School Logo" class="school-logo" routerLink="/home">
+        <div class="logo-glow"></div>
+      </div>
+      <a class="school-name" routerLink="/home">
+        <div class="school-title">Smt. S.T. Mehta English Medium Secondary Girls School</div>
+        <div class="school-title-1">Smt. R.N. Sheth Ratnachandraji English Primary School</div>
+        <div class="school-title-2">Shri R. H. T. T. Pre-Primary Girls School</div>
+        <span class="school-tagline">Managed by SPRJ Kanyashala Trust</span>
+      </a>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li class="nav-item dropdown" (mouseenter)="showDropdown('about')" (mouseleave)="hideDropdown('about')">
+          <a class="nav-link dropdown-trigger" routerLinkActive="active-parent"
+            [routerLinkActiveOptions]="{exact: false}">
+            <span class="nav-text">About</span>
+            <svg class="dropdown-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+            <div class="nav-indicator"></div>
+          </a>
+          <ul class="dropdown-menu" [class.show]="dropdownStates.about">
+            <li><a routerLink="/schoolHistory" routerLinkActive="active" class="dropdown-link">
+                About Us
+              </a></li>
+            <li><a routerLink="/management" routerLinkActive="active" class="dropdown-link">
+                About Management
+              </a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown" (mouseenter)="showDropdown('ppSection')" (mouseleave)="hideDropdown('ppSection')">
+          <a class="nav-link dropdown-trigger" routerLinkActive="active-parent"
+            [routerLinkActiveOptions]="{exact: false}">
+            <span class="nav-text">Pre Primary</span>
+            <svg class="dropdown-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+            <div class="nav-indicator"></div>
+          </a>
+          <ul class="dropdown-menu" [class.show]="dropdownStates.ppSection">
+            <li><a routerLink="/shri-rhtt-section" routerLinkActive="active" class="dropdown-link">
+                About Pre-Primary
+              </a></li>
+            <li><a routerLink="/shri-rhtt-activity" routerLinkActive="active" class="dropdown-link">
+                Pre-Primary Activities
+              </a></li>
+            <li><a routerLink="/shri-rhtt-achievements" routerLinkActive="active" class="dropdown-link">
+                Pre-Primary Achievements
+              </a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown" (mouseenter)="showDropdown('pSection')" (mouseleave)="hideDropdown('pSection')">
+          <a class="nav-link dropdown-trigger" routerLinkActive="active-parent"
+            [routerLinkActiveOptions]="{exact: false}">
+            <span class="nav-text">Primary</span>
+            <svg class="dropdown-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+            <div class="nav-indicator"></div>
+          </a>
+          <ul class="dropdown-menu" [class.show]="dropdownStates.pSection">
+            <li><a routerLink="/rnsheth-section" routerLinkActive="active" class="dropdown-link">
+                About Primary
+              </a></li>
+            <li><a routerLink="/rnsheth-activity" routerLinkActive="active" class="dropdown-link">
+                Primary Activities
+              </a></li>
+            <li><a routerLink="/rnsheth-achievements" routerLinkActive="active" class="dropdown-link">
+                Primary Achievements
+              </a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown" (mouseenter)="showDropdown('sSection')" (mouseleave)="hideDropdown('sSection')">
+          <a class="nav-link dropdown-trigger" routerLinkActive="active-parent"
+            [routerLinkActiveOptions]="{exact: false}">
+            <span class="nav-text">Secondary</span>
+            <svg class="dropdown-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+            <div class="nav-indicator"></div>
+          </a>
+          <ul class="dropdown-menu" [class.show]="dropdownStates.sSection">
+            <li><a routerLink="/stmehta-section" routerLinkActive="active" class="dropdown-link">
+                About Secondary
+              </a></li>
+            <li><a routerLink="/stmehta-activity" routerLinkActive="active" class="dropdown-link">
+                Secondary Activities
+              </a></li>
+            <li><a routerLink="/stmehta-achievements" routerLinkActive="active" class="dropdown-link">
+                Secondary Achievements
+              </a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a routerLink="/infrastructure" routerLinkActive="active" class="nav-link">
+            <span class="nav-text">Infrastructure</span>
+            <div class="nav-indicator"></div>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a routerLink="/contact" routerLinkActive="active" class="nav-link">
+            <span class="nav-text">Contact</span>
+            <div class="nav-indicator"></div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-toggle" (click)="toggleMobileMenu()" [class.active]="isMobileMenuOpen"
+      aria-label="Toggle mobile menu" type="button">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-overlay" [class.active]="isMobileMenuOpen" (click)="closeMobileMenu()"></div>
+
+  <!-- Mobile Navigation Menu -->
+  <div class="mobile-nav" [class.active]="isMobileMenuOpen">
+    <div class="mobile-nav-header">
+      <div class="mobile-logo">
+        <img src="assets/logo1.png" alt="School Logo" routerLink="/home" class="mobile-logo-img">
+        <span class="mobile-school-name" routerLink="/home">Smt. S.T. Mehta English Medium School</span>
+      </div>
+      <button class="mobile-close" (click)="closeMobileMenu()" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M18.3 5.71a.996.996 0 00-1.41 0L12 10.59 7.11 5.7A.996.996 0 105.7 7.11L10.59 12 5.7 16.89a.996.996 0 101.41 1.41L12 13.41l4.89 4.89a.996.996 0 101.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z" />
+        </svg>
+      </button>
+    </div>
+
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item dropdown">
+        <button class="mobile-dropdown-toggle"
+          [class.active]="mobileDropdownStates.ourSchool || isDropdownActive('ourSchool')"
+          (click)="toggleMobileDropdown('ourSchool')">
+          <span class="mobile-nav-icon">🏫</span>
+          <span class="mobile-nav-text">About</span>
+          <svg class="mobile-dropdown-arrow" [class.rotated]="mobileDropdownStates.ourSchool" viewBox="0 0 20 20"
+            fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+        <ul class="mobile-dropdown" [class.show]="mobileDropdownStates.ourSchool">
+          <li><a routerLink="/schoolHistory" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+              class="mobile-dropdown-link" (click)="closeMobileMenu()">
+              About Us
+            </a></li>
+          <li><a routerLink="/management" routerLinkActive="active" class="mobile-dropdown-link"
+              (click)="closeMobileMenu()" [routerLinkActiveOptions]="{ exact: true }">
+              About Management
+            </a></li>
+        </ul>
+      </li>
+      <li class="mobile-nav-item dropdown">
+        <button class="mobile-dropdown-toggle"
+          [class.active]="mobileDropdownStates.ppSection || isDropdownActive('ppSection')"
+          (click)="toggleMobileDropdown('ppSection')">
+          <span class="mobile-nav-icon">🧸</span>
+          <span class="mobile-nav-text">Pre-Primary</span>
+          <svg class="mobile-dropdown-arrow" [class.rotated]="mobileDropdownStates.ppSection" viewBox="0 0 20 20"
+            fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+        <ul class="mobile-dropdown" [class.show]="mobileDropdownStates.ppSection">
+          <li><a routerLink="/shri-rhtt-section" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+              class="mobile-dropdown-link" (click)="closeMobileMenu()">
+              About Pre-Primary
+            </a></li>
+          <li><a routerLink="/shri-rhtt-activity" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+              class="mobile-dropdown-link" (click)="closeMobileMenu()">
+              Pre-Primary Activities
+            </a></li>
+          <li><a routerLink="/shri-rhtt-achievements" routerLinkActive="active" class="mobile-dropdown-link"
+              (click)="closeMobileMenu()" [routerLinkActiveOptions]="{ exact: true }">
+              Pre-Primary Achievements
+            </a></li>
+        </ul>
+      </li>
+      <li class="mobile-nav-item dropdown">
+        <button class="mobile-dropdown-toggle"
+          [class.active]="mobileDropdownStates.pSection || isDropdownActive('pSection')"
+          (click)="toggleMobileDropdown('pSection')">
+          <span class="mobile-nav-icon">📚</span>
+          <span class="mobile-nav-text">Primary</span>
+          <svg class="mobile-dropdown-arrow" [class.rotated]="mobileDropdownStates.pSection" viewBox="0 0 20 20"
+            fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+        <ul class="mobile-dropdown" [class.show]="mobileDropdownStates.pSection">
+          <li><a routerLink="/rnsheth-section" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+              class="mobile-dropdown-link" (click)="closeMobileMenu()">
+              About Primary
+            </a></li>
+          <li><a routerLink="/rnsheth-activity" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+              class="mobile-dropdown-link" (click)="closeMobileMenu()">
+              Primary Activities
+            </a></li>
+          <li><a routerLink="/rnsheth-achievements" routerLinkActive="active" class="mobile-dropdown-link"
+              (click)="closeMobileMenu()" [routerLinkActiveOptions]="{ exact: true }">
+              Primary Achievements
+            </a></li>
+        </ul>
+      </li>
+      <li class="mobile-nav-item dropdown">
+        <button class="mobile-dropdown-toggle"
+          [class.active]="mobileDropdownStates.sSection || isDropdownActive('sSection')"
+          (click)="toggleMobileDropdown('sSection')">
+          <span class="mobile-nav-icon">🎓</span>
+          <span class="mobile-nav-text">Secondary</span>
+          <svg class="mobile-dropdown-arrow" [class.rotated]="mobileDropdownStates.sSection" viewBox="0 0 20 20"
+            fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+        <ul class="mobile-dropdown" [class.show]="mobileDropdownStates.sSection">
+          <li><a routerLink="/stmehta-section" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+              class="mobile-dropdown-link" (click)="closeMobileMenu()">
+              About Secondary
+            </a></li>
+          <li><a routerLink="/stmehta-activity" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+              class="mobile-dropdown-link" (click)="closeMobileMenu()">
+              Secondary Activities
+            </a></li>
+          <li><a routerLink="/stmehta-achievements" routerLinkActive="active" class="mobile-dropdown-link"
+              (click)="closeMobileMenu()" [routerLinkActiveOptions]="{ exact: true }">
+              Secondary Achievements
+            </a></li>
+        </ul>
+      </li>
+      <li class="mobile-nav-item">
+        <a routerLink="/infrastructure" routerLinkActive="active" class="mobile-nav-link" (click)="closeMobileMenu()">
+          <span class="mobile-nav-icon">🏢</span>
+          <span class="mobile-nav-text">Infrastructure</span>
+        </a>
+      </li>
+      <li class="mobile-nav-item">
+        <a routerLink="/contact" routerLinkActive="active" class="mobile-nav-link" (click)="closeMobileMenu()">
+          <span class="mobile-nav-icon">📞</span>
+          <span class="mobile-nav-text">Contact</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="mobile-nav-footer">
+    </div>
+  </div>
+</header>
