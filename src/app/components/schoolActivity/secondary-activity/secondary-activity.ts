@@ -69,11 +69,11 @@ export class SecondaryActivity {
     'co-curricular': [
       {
         id: 3,
-        title: `Installation  ceremony  of Interact members by Rotary Club of Queen's Necklace`,
+        title: `Installation ceremony of Interact members by Rotary Club of Queen's Necklace`,
         images: [
           'assets/Secondary/Activity/Co Curricular/Interact members.jpeg'
         ],
-        description: 'Promoting neat handwriting, accuracy, and presentation skills in English.',
+        description: 'The newly elected office bearers and members inducted into their roles pledged to uphold the values of leadership, service, integrity, and teamwork.',
         color: 'blue'
       },
       {
