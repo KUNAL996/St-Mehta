@@ -58,6 +58,7 @@ export class Infrastructure implements OnInit, OnDestroy {
             'assets/infrastructure/exercise equipment1.jpg',
             'assets/infrastructure/exercise equipment.jpg',
             'assets/infrastructure/exercise equipment2.jpeg',
+            'assets/infrastructure/exercise equipment 3.jpg',
           ],
           details: 'Exercise equipment for physical fitness and health',
           donor: 'Donor : Cultural Arts Foundation',

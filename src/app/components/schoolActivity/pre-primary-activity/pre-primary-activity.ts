@@ -64,7 +64,7 @@ export class PrePrimaryActivity {
           id: 5,
           title: 'Puppet Show',
           images: ['assets/preprimary/Activities/Curricular/Nursery/Puppet Show.jpeg'],
-          description: 'Engaging puppet show activity where children create and perform with their own puppets.',
+          description: 'An engaging Puppet Show where students learn important values such as kindness,honesty and sharing through full filled stories.',
           color: 'blue'
         },
         {
@@ -303,7 +303,7 @@ export class PrePrimaryActivity {
             'assets/preprimary/Activities/ExtraCurricular/Nursery/Fun Carnival 1.jpg',
             'assets/preprimary/Activities/ExtraCurricular/Nursery/Fun Carnival 2.jpg',
           ],
-          description: 'Children enjoy diving and playing in a Fun Carnival.',
+          description: 'An exciting day of fun filled rides, games and interactives in a safe and cheerful environment.',
           color: 'red'
         },
         {
@@ -317,14 +317,14 @@ export class PrePrimaryActivity {
           id: 3,
           title: 'Field Trip',
           images: ['assets/preprimary/Activities/ExtraCurricular/Nursery/Field trip.jpg'],
-          description: 'Children enjoy a field trip to a nearby park or playground.',
+          description: 'Children enjoy a visit to a garden where learning meets nature.',
           color: 'pink'
         },
         {
           id: 4,
           title: 'Picnic',
           images: ['https://i.imghippo.com/files/SF7229RRE.jpeg'],
-          description: 'Outdoor picnic where children having fun.',
+          description: 'An exciting outdoor picnic that offers children a perfect blend of fun, adventure and learning.',
           color: 'red'
         },
         {
@@ -365,7 +365,7 @@ export class PrePrimaryActivity {
           id: 3,
           title: 'Fun Carnival',
           images: ['assets/preprimary/Activities/ExtraCurricular/Jr/Fun Carnival.jpeg'],
-          description: 'Children enjoy a fun carnival with games and activities.',
+          description: 'An exciting day of fun filled rides, games and interactives in a safe and cheerful environment',
           color: 'blue'
         },
         {
@@ -394,6 +394,15 @@ export class PrePrimaryActivity {
           images: ['assets/preprimary/Activities/ExtraCurricular/Jr/Navratri Celebration.jpeg'],
           description: 'Children celebrate Navaratri by performing traditional dances and enjoying a fun navaratri event.',
           color: 'blue'
+        },
+        {
+          id: 7,
+          title: 'Celebrating International Yoga Day',
+          images: ['assets/preprimary/Activities/ExtraCurricular/Jr/International yoga day.jpeg',
+            'assets/preprimary/Activities/ExtraCurricular/Jr/International yoga day 1.jpeg'
+          ],
+          description: 'Kids celebrate International Day of Yoga by performing yoga poses and enjoying a fun yoga session.',
+          color: 'pink'
         },
       ],
       'sr-kg': [
@@ -437,7 +446,7 @@ export class PrePrimaryActivity {
           id: 6,
           title: 'Workshop on Good Touch and Bad Touch',
           images: ['assets/preprimary/Activities/ExtraCurricular/Sr/Good Touch and Bad Touch.jpeg'],
-          description: 'Important workshop educating children about personal safety and boundaries.',
+          description: `Important workshop ..................boundaries organised by Innerwheel Wheel Club Of Bombay Queen's Necklace.`,
           color: 'pink'
         },
       ]

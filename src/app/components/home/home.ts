@@ -315,7 +315,7 @@ export class Home implements OnInit, OnDestroy, AfterViewInit {
   ];
 
   news: NewsItem[] = [
-    { category: 'Art', categoryClass: 'cat-sports', title: 'N Ward Art Competition Winner Inter-School Competition', excerpt: 'Students from our school emerged victorious in the inter-school art competition.', image: 'https://i.postimg.cc/g2QnwwbH/Winner-of-N-Ward-competition.jpg' },
+    { category: 'Art', categoryClass: 'cat-sports', title: 'N Ward Art Competition Winner Inter-School Competition', excerpt: 'Got 3rd consolation prize in story telling Competition organised by BMC N Ward Competition.', image: 'https://i.postimg.cc/g2QnwwbH/Winner-of-N-Ward-competition.jpg' },
     { category: 'Academics', categoryClass: 'cat-academics', title: 'Rangotsav Competition Winners', excerpt: 'Our students have excelled in the annual Rangotsav competition.', image: 'https://i.postimg.cc/tR2dsT1s/Rangotsav-Colouring-Competition-Winners.jpg' },
     { category: 'Academics', categoryClass: 'cat-events', title: 'Hem Virtue Star Excellence Award', excerpt: 'Students were honored for their brilliance and core values with the prestigious Hem Virtue Star Excellence Award.', image: 'https://i.postimg.cc/FFjjCYjC/Hem-Virtue-Star-Excellence-Award-2025-2026-2.jpg' },
     { category: 'Culture', categoryClass: 'cat-culture', title: 'Republic Day Celebrated', excerpt: 'Patriotic activities and celebrations for Republic Day.', image: 'https://i.imghippo.com/files/RDB9330Okw.jpeg' },
