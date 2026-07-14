@@ -100,7 +100,7 @@ export class SecondaryActivity {
         id: 3,
         title: 'English Handwriting Competition',
         images: [
-          'assets/Secondary/Activity/Co Curricular/English Handwriting  Competition.jpg'
+          'assets/Secondary/Activity/Co Curricular/English Handwriting Competition.jpg'
         ],
         description: 'Promoting neat handwriting, accuracy, and presentation skills in English.',
         color: 'blue'
