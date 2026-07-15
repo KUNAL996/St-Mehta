@@ -446,7 +446,7 @@ export class PrePrimaryActivity {
           id: 6,
           title: 'Workshop on Good Touch and Bad Touch',
           images: ['assets/preprimary/Activities/ExtraCurricular/Sr/Good Touch and Bad Touch.jpeg'],
-          description: `Important workshop ..................boundaries organised by Innerwheel Wheel Club Of Bombay Queen's Necklace.`,
+          description: `Organised by Inner wheel Club of Bombay Queen's Necklace to create awareness among students about personal safety.`,
           color: 'pink'
         },
       ]

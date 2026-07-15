@@ -174,12 +174,6 @@ export class PpSection {
       qualification: 'B.Com, ECC.Ed',
       image: 'assets/preprimary/Staff/Mrs. Urvi Mane.jpg'
     },
-    {
-      name: 'Mrs. Amisha Sanghvi',
-      position: 'Asst. Teacher',
-      qualification: 'B.Com, ECC.Ed',
-      image: 'assets/preprimary/Staff/Mrs. Amisha Sanghvi.jpg'
-    }
   ];
 
   nonTeachingStaff = [

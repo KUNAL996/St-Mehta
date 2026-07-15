@@ -65,10 +65,20 @@ export class SecondaryActivity {
         description: 'A quiet space for students to read, study, and research.',
         color: 'blue'
       },
+      {
+        id: 6,
+        title: 'Language Club',
+        images: [
+          'assets/Secondary/Activity/Curricular/Language Club.jpeg',
+          'assets/Secondary/Activity/Curricular/Language Club 1.jpeg'
+        ],
+        description: 'Enhancing communication, vocabulary, and language skills through interactive activities.',
+        color: 'pink'
+      }
     ],
     'co-curricular': [
       {
-        id: 3,
+        id: 1,
         title: `Installation ceremony of Interact members by Rotary Club of Queen's Necklace`,
         images: [
           'assets/Secondary/Activity/Co Curricular/Interact members.jpeg'
@@ -77,7 +87,7 @@ export class SecondaryActivity {
         color: 'blue'
       },
       {
-        id: 1,
+        id: 2,
         title: 'Celebrating Marathi Bhasha Diwas',
         images: [
           'assets/Secondary/Activity/Co Curricular/Marathi Bhasha Diwas.jpg',
@@ -88,7 +98,7 @@ export class SecondaryActivity {
         color: 'red'
       },
       {
-        id: 2,
+        id: 3,
         title: 'Drawing Competition',
         images: [
           'assets/Secondary/Activity/Co Curricular/Drawing Competition.jpg'
@@ -97,7 +107,7 @@ export class SecondaryActivity {
         color: 'pink'
       },
       {
-        id: 3,
+        id: 4,
         title: 'English Handwriting Competition',
         images: [
           'assets/Secondary/Activity/Co Curricular/English Handwriting Competition.jpg'
@@ -106,21 +116,20 @@ export class SecondaryActivity {
         color: 'blue'
       },
       {
-        id: 1,
-        title: 'Lessons taught through smart board',
-        images: ['assets/Secondary/Activity/Co Curricular/Language Club.jpeg',
-          'assets/Secondary/Activity/Co Curricular/Language Club 1.jpeg',
-          'assets/Secondary/Activity/Co Curricular/Language Club 2.jpeg',
-          'assets/Secondary/Activity/Co Curricular/Language Club 3.jpeg',
-          'assets/Secondary/Activity/Co Curricular/Language Club 4.jpeg',
-          'assets/Secondary/Activity/Co Curricular/Language Club 5.jpeg',
-          'assets/Secondary/Activity/Co Curricular/Language Club 6.jpeg'
+        id: 5,
+        title: 'Lessons taught through digital smart board',
+        images: ['assets/Secondary/Activity/Co Curricular/Smart Board.jpeg',
+          'assets/Secondary/Activity/Co Curricular/Smart Board 1.jpeg',
+          'assets/Secondary/Activity/Co Curricular/Smart Board 2.jpeg',
+          'assets/Secondary/Activity/Co Curricular/Smart Board 3.jpeg',
+          'assets/Secondary/Activity/Co Curricular/Smart Board 4.jpeg',
+          'assets/Secondary/Activity/Co Curricular/Smart Board 5.jpeg',
         ],
-        description: 'A classroom activity where students participate in engaging English word games led by a teacher.',
+        description: 'A classroom activity where students learning lessons through Digital Smart Board.',
         color: 'red'
       },
       {
-        id: 2,
+        id: 6,
         title: "Speech & Drama",
         images: ['assets/Secondary/Activity/Co Curricular/Speech and Drama.jpg',
           'assets/Secondary/Activity/Co Curricular/Speech and Drama 1.jpg',
@@ -130,49 +139,49 @@ export class SecondaryActivity {
         color: 'pink'
       },
       {
-        id: 3,
+        id: 7,
         title: 'Debate Competition',
         images: ['assets/Secondary/Activity/Co Curricular/Debate Competition.jpeg'],
         description: 'Debate competitions that encourage critical thinking and public speaking skills.',
         color: 'blue'
       },
       {
-        id: 4,
+        id: 8,
         title: "Elocution",
         images: ['assets/Secondary/Activity/Co Curricular/Elocution.jpeg'],
         description: 'Elocution contests that help students improve their articulation and presentation skills.',
         color: 'red'
       },
       {
-        id: 5,
+        id: 9,
         title: 'Singing Competition',
         images: ['assets/Secondary/Activity/Co Curricular/Singing Competition.jpeg'],
         description: 'Singing competitions that foster musical talent and confidence.',
         color: 'pink'
       },
       {
-        id: 6,
+        id: 10,
         title: "Awareness Programme on Children's Safety",
         images: ['assets/Secondary/Activity/Co Curricular/Awarness Workshop.jpeg'],
         description: 'Important workshop educating students about personal safety and boundaries.',
         color: 'blue'
       },
       {
-        id: 7,
+        id: 11,
         title: 'Eco club workshop on Eco friendly Ganapathy',
         images: ['assets/Secondary/Activity/Co Curricular/Eco Club.jpg'],
         description: 'Workshop promoting environmental awareness and sustainability.',
         color: 'red'
       },
       {
-        id: 8,
+        id: 12,
         title: `Good Touch and Bad Touch (By Inner Wheel Club of Queen's Necklace)`,
         images: ['assets/Secondary/Activity/Co Curricular/Good Touch Bad Touch.jpeg'],
         description: 'Important education for students about personal safety and boundaries.',
         color: 'pink'
       },
       {
-        id: 9,
+        id: 13,
         title: 'N Ward Science Exhibition',
         images: ['assets/Secondary/Activity/Co Curricular/Science Exhibition.jpeg',
           'assets/Secondary/Activity/Co Curricular/Science Exhibition 1.jpeg'
@@ -181,70 +190,70 @@ export class SecondaryActivity {
         color: 'blue'
       },
       {
-        id: 10,
+        id: 14,
         title: 'Piano Keyboard',
         images: ['assets/Secondary/Activity/Co Curricular/Piano Keyboard.jpg'],
         description: 'Piano keyboard classes to develop musical skills and appreciation.',
         color: 'red'
       },
       {
-        id: 11,
+        id: 15,
         title: 'Physical Training',
         images: ['assets/Secondary/Activity/Co Curricular/Physical Training.jpeg'],
         description: 'Physical training sessions to improve health and fitness.',
         color: 'pink'
       },
       {
-        id: 12,
+        id: 16,
         title: 'Gymnastics',
         images: ['assets/Secondary/Activity/Co Curricular/Gymnastics.jpeg'],
         description: 'Gymnastics routines to enhance flexibility, strength, and coordination.',
         color: 'blue'
       },
       {
-        id: 13,
+        id: 17,
         title: 'Rope Malakam',
         images: ['assets/Secondary/Activity/Co Curricular/Rope Malakam.jpeg'],
         description: 'Rope climbing activities to enhance strength and agility.',
         color: 'red'
       },
       {
-        id: 14,
+        id: 18,
         title: 'Table Tennis',
         images: ['assets/Secondary/Activity/Co Curricular/Table Tennis.jpeg'],
         description: 'Daily physical workouts and drills to improve health and discipline.',
         color: 'pink'
       },
       {
-        id: 15,
+        id: 19,
         title: 'Taekwondo',
         images: ['assets/Secondary/Activity/Co Curricular/Taekwondo.jpg'],
         description: 'Martial arts training that builds discipline, focus, and physical strength.',
         color: 'blue'
       },
       {
-        id: 16,
+        id: 20,
         title: 'Chess',
         images: ['assets/Secondary/Activity/Co Curricular/Chess.jpg'],
         description: 'Strategic chess matches develop critical thinking and problem-solving skills.',
         color: 'red'
       },
       {
-        id: 17,
+        id: 21,
         title: 'Basketball',
         images: ['assets/Secondary/Activity/Co Curricular/Basketball.jpg'],
         description: 'Competitive basketball training sessions that enhance teamwork and physical fitness.',
         color: 'pink'
       },
       {
-        id: 18,
+        id: 22,
         title: 'Tabla',
         images: ['assets/Secondary/Activity/Co Curricular/Tabla.jpg'],
         description: 'Tabla classes to nurture musical talent and rhythm skills.',
         color: 'blue'
       },
       {
-        id: 19,
+        id: 23,
         title: 'Guitar',
         images: ['assets/Secondary/Activity/Co Curricular/Guitar.jpg'],
         description: 'Guitar classes to promote musical creativity and skill development.',

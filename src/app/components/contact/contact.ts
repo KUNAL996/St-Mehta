@@ -30,7 +30,7 @@ export class Contact {
     address: 'Junction of Cama and Hansoti Lane, Ghatkopar (W), Mumbai – 400086',
     email: 'rnshethengpri@gmail.com',
     alternateemail: 'smstmehta@gmail.com',
-    phone: '+91 99699 82911',
+    phone: '+91 99699 82911 &nbsp +91 98709 28408',
     timings: 'Monday to Friday: 7.30 AM to 2.30 PM\nSaturday: 11.00 AM to 3.00 PM\nSunday: Closed'
   };
 }
