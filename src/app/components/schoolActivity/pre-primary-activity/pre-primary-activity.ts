@@ -398,8 +398,8 @@ export class PrePrimaryActivity {
         {
           id: 7,
           title: 'Celebrating International Yoga Day',
-          images: ['assets/preprimary/Activities/ExtraCurricular/Jr/International yoga day.jpeg',
-            'assets/preprimary/Activities/ExtraCurricular/Jr/International yoga day 1.jpeg'
+          images: ['assets/preprimary/Activities/ExtraCurricular/Jr/International yoga day.jpg',
+            'assets/preprimary/Activities/ExtraCurricular/Jr/International yoga day 1.jpg'
           ],
           description: 'Kids celebrate International Day of Yoga by performing yoga poses and enjoying a fun yoga session.',
           color: 'pink'
