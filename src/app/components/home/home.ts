@@ -319,7 +319,7 @@ export class Home implements OnInit, OnDestroy, AfterViewInit {
     { category: 'Academics', categoryClass: 'cat-academics', title: 'Rangotsav Competition Winners', excerpt: 'Our students have excelled in the annual Rangotsav competition.', image: 'https://i.postimg.cc/tR2dsT1s/Rangotsav-Colouring-Competition-Winners.jpg' },
     { category: 'Academics', categoryClass: 'cat-events', title: 'Hem Virtue Star Excellence Award', excerpt: 'Students were honored for their brilliance and core values with the prestigious Hem Virtue Star Excellence Award.', image: 'https://i.postimg.cc/FFjjCYjC/Hem-Virtue-Star-Excellence-Award-2025-2026-2.jpg' },
     { category: 'Culture', categoryClass: 'cat-culture', title: 'Republic Day Celebrated', excerpt: 'Patriotic activities and celebrations for Republic Day.', image: 'https://i.imghippo.com/files/RDB9330Okw.jpeg' },
-    { category: 'Academics', categoryClass: 'cat-events', title: 'Digital Smart Class', excerpt: 'A classroom activity where students learning lessons through Digital Smart Board.', image: 'assets/Secondary/Activity/Co Curricular/Smart Board 4.jpeg' },
+    { category: 'Academics', categoryClass: 'cat-events', title: 'Digital Smart Class', excerpt: 'A classroom activity where students learn lessons through Digital Smart Board.', image: 'assets/Secondary/Activity/Co Curricular/Smart Board 4.jpeg' },
     { category: 'Art', categoryClass: 'cat-sports', title: 'Art Class', excerpt: 'Art classes where students explore various techniques to express their creativity.', image: 'https://i.imghippo.com/files/XlK9805E.jpeg' },
   ];
 }

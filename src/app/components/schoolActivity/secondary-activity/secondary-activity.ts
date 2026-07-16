@@ -66,15 +66,18 @@ export class SecondaryActivity {
         color: 'blue'
       },
       {
-        id: 6,
-        title: 'Language Club',
-        images: [
-          'assets/Secondary/Activity/Curricular/Language Club.jpeg',
-          'assets/Secondary/Activity/Curricular/Language Club 1.jpeg'
+        id: 5,
+        title: 'Lessons taught through digital smart board',
+        images: ['assets/Secondary/Activity/Curricular/Smart Board.jpeg',
+          'assets/Secondary/Activity/Curricular/Smart Board 1.jpeg',
+          'assets/Secondary/Activity/Curricular/Smart Board 2.jpeg',
+          'assets/Secondary/Activity/Curricular/Smart Board 3.jpeg',
+          'assets/Secondary/Activity/Curricular/Smart Board 4.jpeg',
+          'assets/Secondary/Activity/Curricular/Smart Board 5.jpeg',
         ],
-        description: 'Enhancing communication, vocabulary, and language skills through interactive activities.',
-        color: 'pink'
-      }
+        description: 'A classroom activity where students learn lessons through Digital Smart Board.',
+        color: 'red'
+      },
     ],
     'co-curricular': [
       {
@@ -117,16 +120,13 @@ export class SecondaryActivity {
       },
       {
         id: 5,
-        title: 'Lessons taught through digital smart board',
-        images: ['assets/Secondary/Activity/Co Curricular/Smart Board.jpeg',
-          'assets/Secondary/Activity/Co Curricular/Smart Board 1.jpeg',
-          'assets/Secondary/Activity/Co Curricular/Smart Board 2.jpeg',
-          'assets/Secondary/Activity/Co Curricular/Smart Board 3.jpeg',
-          'assets/Secondary/Activity/Co Curricular/Smart Board 4.jpeg',
-          'assets/Secondary/Activity/Co Curricular/Smart Board 5.jpeg',
+        title: 'Language Club',
+        images: [
+          'assets/Secondary/Activity/Co Curricular/Language Club.jpeg',
+          'assets/Secondary/Activity/Co Curricular/Language Club 1.jpeg'
         ],
-        description: 'A classroom activity where students learning lessons through Digital Smart Board.',
-        color: 'red'
+        description: 'Enhancing communication, vocabulary, and language skills through interactive activities.',
+        color: 'pink'
       },
       {
         id: 6,
