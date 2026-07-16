@@ -117,64 +117,66 @@ export class PrePrimaryActivity {
       'sr-kg': [
         {
           id: 1,
-          title: 'Thali Decoration',
-          images: ['https://i.imghippo.com/files/lx5805DFc.jpeg'],
-          description: 'Children decorate traditional thalis with leafs and flowers.',
+          title: 'Play, Learn & Identify – Parts of a Plant',
+          images: [
+            'assets/preprimary/Activities/Curricular/Sr/Parts of a Plant.jpg'
+          ],
+          description: 'Helping children identify and understand the different parts of a plant through fun learning.',
           color: 'red'
         },
         {
           id: 2,
           title: 'Pot Decoration',
-          images: ['https://i.postimg.cc/xCFqj9RZ/Matka-decoration.jpg'],
+          images: ['assets/preprimary/Activities/Curricular/Sr/Pot Decoration.jpg'],
           description: 'Decorating traditional clay pots with colors and patterns, encouraging creativity.',
           color: 'blue'
         },
         {
           id: 3,
           title: 'Raksha Bandhan Greeting Card Making',
-          images: ['https://i.imghippo.com/files/KbvH8480Mc.jpeg'],
+          images: ['assets/preprimary/Activities/Curricular/Sr/Raksha Bandhan Greeting Card Making.jpeg'],
           description: 'A dash of colours, a touch of love - greeting cards for Raksha Bandhan',
           color: 'pink'
         },
         {
           id: 4,
           title: 'Adding colours to imagination',
-          images: ['https://i.imghippo.com/files/RKM2042lFY.jpeg'],
+          images: ['assets/preprimary/Activities/Curricular/Sr/Adding colours to imagination.jpeg'],
           description: 'Artistic expression through vibrant drawings and colors.',
           color: 'red'
         },
         {
           id: 5,
           title: 'Paper Quilling',
-          images: ['https://i.imghippo.com/files/MyLc8320Qv.jpeg'],
+          images: ['assets/preprimary/Activities/Curricular/Sr/Paper Quilling.jpeg'],
           description: 'Bright and cheerful balloon-themed coloring activity.',
           color: 'blue'
         },
         {
           id: 6,
           title: 'Snail Making',
-          images: ['https://i.imghippo.com/files/cnu8826Is.jpeg'],
+          images: ['assets/preprimary/Activities/Curricular/Sr/Snail Making.jpeg'],
           description: 'Crafting adorable snails using paper and colors to enhance fine skills.',
           color: 'pink'
         },
         {
           id: 7,
           title: 'Princess Crown Making',
-          images: ['https://i.imghippo.com/files/kmNK6310Oc.jpeg'],
+          images: ['assets/preprimary/Activities/Curricular/Sr/Princess Crown Making.jpeg'],
           description: 'Creating beautiful princess crowns using craft materials, fostering creativity and imagination.',
           color: 'red'
         },
         {
           id: 8,
           title: 'Bucket Decoration',
-          images: ['https://i.imghippo.com/files/Ana4254lxc.jpeg'],
+          images: ['assets/preprimary/Activities/Curricular/Sr/Bucket Decoration.jpeg'],
           description: 'Decorating buckets with vibrant colors and patterns for a fun craft activity.',
           color: 'blue'
         },
         {
           id: 9,
           title: 'Teaching alphabets & numbers',
-          images: ['https://i.imghippo.com/files/CKZ8700Bws.jpeg'],
+          images: ['assets/preprimary/Activities/Curricular/Sr/Teaching alphabets & numbers.jpeg'],
           description: 'Engaging activities that teach children alphabets and numbers through colorful visuals and interactive methods.',
           color: 'pink'
         },
@@ -323,7 +325,7 @@ export class PrePrimaryActivity {
         {
           id: 4,
           title: 'Picnic',
-          images: ['https://i.imghippo.com/files/SF7229RRE.jpeg'],
+          images: ['assets/preprimary/Activities/ExtraCurricular/Nursery/Picnic.jpeg'],
           description: 'An exciting outdoor picnic that offers children a perfect blend of fun, adventure and learning.',
           color: 'red'
         },
@@ -408,46 +410,53 @@ export class PrePrimaryActivity {
       'sr-kg': [
         {
           id: 1,
-          title: 'Fun Carnival',
-          images: ['assets/preprimary/Activities/ExtraCurricular/Sr/Fun Carnival 1.jpg',
-            'assets/preprimary/Activities/ExtraCurricular/Sr/Fun Carnival.jpg'],
-          description: 'A lively carnival with games and activities that spark joy and laughter.',
+          title: 'Thali Decoration',
+          images: ['assets/preprimary/Activities/ExtraCurricular/Sr/Thali Decoration.jpeg'],
+          description: 'Children decorate traditional thalis with leafs and flowers.',
           color: 'red'
         },
         {
           id: 2,
-          title: 'Kids enjoying Sandpit at Play & Learn',
-          images: ['assets/preprimary/Activities/ExtraCurricular/Sr/Kids enjoying.jpg'],
-          description: 'Sensory play in a sandpit allows children to dig, build, and explore.',
+          title: 'Fun Carnival',
+          images: ['assets/preprimary/Activities/ExtraCurricular/Sr/Fun Carnival 1.jpg',
+            'assets/preprimary/Activities/ExtraCurricular/Sr/Fun Carnival.jpg'],
+          description: 'A lively carnival with games and activities that spark joy and laughter.',
           color: 'blue'
         },
         {
           id: 3,
-          title: 'Picnic at Xenos Play Area',
-          images: ['assets/preprimary/Activities/ExtraCurricular/Sr/Xenos Play Area.jpeg'],
-          description: 'Outdoor picnic where children having fun at Xenos Play Area.',
+          title: 'Kids enjoying Sandpit at Play & Learn',
+          images: ['assets/preprimary/Activities/ExtraCurricular/Sr/Kids enjoying.jpg'],
+          description: 'Sensory play in a sandpit allows children to dig, build, and explore.',
           color: 'pink'
         },
         {
           id: 4,
-          title: 'Tree Plantation',
-          images: ['assets/preprimary/Activities/ExtraCurricular/Sr/Tree Plantation.jpg'],
-          description: 'Kids participate in planting trees to promote environmental awareness.',
+          title: 'Picnic at Xenos Play Area',
+          images: ['assets/preprimary/Activities/ExtraCurricular/Sr/Xenos Play Area.jpeg'],
+          description: 'Outdoor picnic where children having fun at Xenos Play Area.',
           color: 'red'
         },
         {
           id: 5,
-          title: 'Republic Day Celebration',
-          images: ['assets/preprimary/Activities/ExtraCurricular/Sr/Republic Day Celebration.jpg'],
-          description: 'Patriotic activities and celebrations for Republic Day.',
+          title: 'Tree Plantation',
+          images: ['assets/preprimary/Activities/ExtraCurricular/Sr/Tree Plantation.jpg'],
+          description: 'Kids participate in planting trees to promote environmental awareness.',
           color: 'blue'
         },
         {
           id: 6,
+          title: 'Republic Day Celebration',
+          images: ['assets/preprimary/Activities/ExtraCurricular/Sr/Republic Day Celebration.jpg'],
+          description: 'Patriotic activities and celebrations for Republic Day.',
+          color: 'pink'
+        },
+        {
+          id: 7,
           title: 'Workshop on Good Touch and Bad Touch',
           images: ['assets/preprimary/Activities/ExtraCurricular/Sr/Good Touch and Bad Touch.jpeg'],
           description: `Organised by Inner wheel Club of Bombay Queen's Necklace to create awareness among students about personal safety.`,
-          color: 'pink'
+          color: 'red'
         },
       ]
     }

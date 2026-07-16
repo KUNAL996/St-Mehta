@@ -168,10 +168,18 @@ export class Infrastructure implements OnInit, OnDestroy {
           images: ['assets/infrastructure/Sr Kg.jpeg'],
           details: 'Senior KG classroom preparing children for primary education.',
           donor: 'Donor : Literary Society',
-          color: 'pink'
+          color: 'red'
         },
         {
           id: 8,
+          name: 'Senior KG - Green Room',
+          images: ['assets/infrastructure/Green room.png'],
+          details: 'Senior KG classroom fostering creativity and learning.',
+          donor: 'Donor : Literary Society',
+          color: 'blue'
+        },
+        {
+          id: 9,
           name: 'Puppet Theatre Room',
           images: ['assets/infrastructure/puppet room.jpg'],
           details: 'Room dedicated to puppet theatre activities for creative expression.',
