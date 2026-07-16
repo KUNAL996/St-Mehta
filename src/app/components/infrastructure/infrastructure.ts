@@ -176,7 +176,7 @@ export class Infrastructure implements OnInit, OnDestroy {
           images: ['assets/infrastructure/Green room.png'],
           details: 'Senior KG classroom fostering creativity and learning.',
           donor: 'Donor : Literary Society',
-          color: 'blue'
+          color: 'green'
         },
         {
           id: 9,
@@ -184,7 +184,7 @@ export class Infrastructure implements OnInit, OnDestroy {
           images: ['assets/infrastructure/puppet room.jpg'],
           details: 'Room dedicated to puppet theatre activities for creative expression.',
           donor: 'Donor : Literary Society',
-          color: 'blue'
+          color: 'red'
         },
       ]
     },
