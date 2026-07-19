@@ -81,7 +81,7 @@ export class PrePrimaryActivity {
           title: 'Cat puppet making using paper bags',
           images: ['assets/preprimary/Activities/Curricular/Jr/Cat puppet making using paper bags.jpg'],
           description: 'Creative puppet craft activity using paper bags to spark imagination.',
-          color: 'red'
+          color: 'blue'
         },
         {
           id: 2,
@@ -111,8 +111,15 @@ export class PrePrimaryActivity {
           title: 'Learning Alphabets',
           images: ['assets/preprimary/Activities/Curricular/Jr/Learning Alphabets.jpeg'],
           description: 'Learning Alphabets where children learn to recognize alphabets.',
-          color: 'red'
+          color: 'pink'
         },
+        {
+          id: 6,
+          title: 'Colouring Activity',
+          images: ['assets/preprimary/Activities/Curricular/Jr/Colouring Activity.jpeg'],
+          description: 'Developing creativity skills through fun colouring activities.',
+          color: 'red'
+        }
       ],
       'sr-kg': [
         {

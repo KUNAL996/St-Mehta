@@ -409,3 +409,46 @@ html {
   color: #d69e2e;
   transition: color 0.3s ease;
 }
+
+
+.content-paragraph-text {
+  font-size: 1rem;
+  color: #2d3748;
+  line-height: 1.8;
+  text-align: justify;
+  margin: 0;
+  font-weight: 400;
+}
+
+.link-paragraph {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid #e2e8f0;
+}
+
+.external-link {
+  color: #2c5282;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.external-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #d69e2e;
+  transition: width 0.3s ease;
+}
+
+.external-link:hover {
+  color: #d69e2e;
+}
+
+.external-link:hover::after {
+  width: 100%;
+}

@@ -66,9 +66,10 @@ export class SecondaryActivity {
         color: 'blue'
       },
       {
-        id: 5,
+        id: 6,
         title: 'Lessons taught through digital smart board',
-        images: ['assets/Secondary/Activity/Curricular/Smart Board.jpeg',
+        images: ['assets/Secondary/Activity/Curricular/Smart Board 1.jpeg',
+          'assets/Secondary/Activity/Curricular/Smart Board.jpeg',
           'assets/Secondary/Activity/Curricular/Smart Board 1.jpeg',
           'assets/Secondary/Activity/Curricular/Smart Board 2.jpeg',
           'assets/Secondary/Activity/Curricular/Smart Board 3.jpeg',

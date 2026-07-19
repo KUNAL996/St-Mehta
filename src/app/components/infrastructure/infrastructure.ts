@@ -72,6 +72,17 @@ export class Infrastructure implements OnInit, OnDestroy {
           donor: 'Donor : Drama Society Alumni',
           color: 'blue'
         },
+        {
+          id: 6,
+          name: 'Wall Murals Promoting Awareness',
+          images: [
+            'assets/infrastructure/Wall murals promoting awareness.jpeg',
+            'assets/infrastructure/Wall murals promoting awareness.png'
+          ],
+          details: 'Educational wall murals that inspire creativity, awareness, and positive values among students.',
+          donor: 'Donor : Drama Society Alumni',
+          color: 'red'
+        },
       ]
     },
     mezzanine: {
@@ -168,12 +179,12 @@ export class Infrastructure implements OnInit, OnDestroy {
           images: ['assets/infrastructure/Sr Kg.jpeg'],
           details: 'Senior KG classroom preparing children for primary education.',
           donor: 'Donor : Literary Society',
-          color: 'red'
+          color: 'pink'
         },
         {
           id: 8,
           name: 'Senior KG - Green Room',
-          images: ['assets/infrastructure/Green room.png'],
+          images: ['assets/infrastructure/green room.png'],
           details: 'Senior KG classroom fostering creativity and learning.',
           donor: 'Donor : Literary Society',
           color: 'green'

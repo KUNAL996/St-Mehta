@@ -215,12 +215,24 @@ export class PSection {
       qualification: ' M.A., D.T.Ed.',
       image: 'assets/Primary/Staff/Mrs-Pallavi-Shinde.jpg'
     },
-    // {
-    //   name: 'Ms. Pooja Jadhav',
-    //   position: 'Computer Teacher',
-    //   qualification: 'B.Com',
-    //   image: 'assets/Primary/Staff/Ms-Pooja-Jadhav.jpg'
-    // },
+    {
+      name: 'Mrs. Amisha Sanghvi',
+      position: 'Assistant Teacher',
+      qualification: ' B.Com, ECCEd',
+      image: 'assets/Primary/Staff/Amisha Sanghvi.jpg'
+    },
+    {
+      name: 'Mrs. Bhavna Thakkar',
+      position: 'Computer Teacher',
+      qualification: 'Master of Science in Computer Science',
+      image: 'assets/Primary/Staff/Bhavna Thakkar.jpg'
+    },
+    {
+      name: 'Ms. Ruchi Barochiya',
+      position: 'Computer Teacher',
+      qualification: 'Master of Science in Computer Science',
+      image: 'assets/Primary/Staff/Ruchi Barochiya.png'
+    },
   ];
 
   nonTeachingStaff = [

@@ -43,7 +43,7 @@ export class PrePrimaryAchievements implements OnInit, OnDestroy {
         title: 'Rangotsav Colouring Competition Winners',
         images: [
           {
-            url: 'https://i.postimg.cc/tR2dsT1s/Rangotsav-Colouring-Competition-Winners.jpg',
+            url: 'assets/preprimary/Achievements/Rangotsav Colouring.jpg',
             title: 'Rangotsav Colouring Competition Winners',
             description: 'Winners showcasing creativity and color sense in the Rangotsav colouring contest.'
           }
@@ -56,7 +56,7 @@ export class PrePrimaryAchievements implements OnInit, OnDestroy {
         title: 'Rangotsav Handwriting Competition – Participation',
         images: [
           {
-            url: 'https://i.postimg.cc/KvjPB2LJ/Rangotsav-Handwriting-Competition-Participation-Certificate.jpg',
+            url: 'assets/preprimary/Achievements/Rangotsav Handwriting Competition Participation.jpg',
             title: 'Rangotsav Handwriting Competition – Participation',
             description: 'Young participants proudly receive certificates for handwriting excellence.'
           }
@@ -69,7 +69,7 @@ export class PrePrimaryAchievements implements OnInit, OnDestroy {
         title: 'Rangotsav Handwriting Competition Winners',
         images: [
           {
-            url: 'https://i.postimg.cc/jd1zhF4K/Rangotsav-Handwriting-Competition-winners.jpg',
+            url: 'assets/preprimary/Achievements/Rangotsav Handwriting Competition Winners.jpg',
             title: 'Rangotsav Handwriting Competition Winners',
             description: 'Winners celebrated for neatness and presentation in handwriting competition.'
           }
@@ -82,27 +82,27 @@ export class PrePrimaryAchievements implements OnInit, OnDestroy {
         title: 'Winners / Participants of Colouring Competition',
         images: [
           {
-            url: 'https://i.imghippo.com/files/OPD4215bv.jpeg',
+            url: 'assets/preprimary/Achievements/Winners Participants of Colouring.jpeg',
             title: 'Winners / Participants of Colouring Competition',
             description: 'Awarded for outstanding creativity and artistic expression in the All India Art Talent Contest by Kala Children Academy.'
           },
           {
-            url: 'https://i.imghippo.com/files/JdM8767pBM.jpeg',
+            url: 'assets/preprimary/Achievements/Winners Participants of Colouring 1.jpeg',
             title: 'Winners / Participants of Colouring Competition',
             description: 'Awarded for outstanding creativity and artistic expression in the All India Art Talent Contest by Kala Children Academy.'
           },
           {
-            url: 'https://i.imghippo.com/files/Sfc2790pl.jpeg',
+            url: 'assets/preprimary/Achievements/Winners Participants of Colouring 2.jpeg',
             title: 'Winners / Participants of Colouring Competition',
             description: 'Awarded for outstanding creativity and artistic expression in the All India Art Talent Contest by Kala Children Academy.'
           },
           {
-            url: 'https://i.imghippo.com/files/pd6621Bw.jpeg',
+            url: 'assets/preprimary/Achievements/Winners Participants of Colouring 3.jpeg',
             title: 'Winners / Participants of Colouring Competition',
             description: 'Awarded for outstanding creativity and artistic expression in the All India Art Talent Contest by Kala Children Academy.'
           },
           {
-            url: 'https://i.imghippo.com/files/FcKN2736Iaw.jpeg',
+            url: 'assets/preprimary/Achievements/Winners Participants of Colouring 4.jpeg',
             title: 'Winners / Participants of Colouring Competition',
             description: 'Awarded for outstanding creativity and artistic expression in the All India Art Talent Contest by Kala Children Academy.'
           }
@@ -115,12 +115,12 @@ export class PrePrimaryAchievements implements OnInit, OnDestroy {
         title: 'Winners / Participants of Handwriting Competition',
         images: [
           {
-            url: 'https://i.imghippo.com/files/PTri4214aKs.jpeg',
+            url: 'assets/preprimary/Achievements/Winners Participants of Handwriting Competition.jpeg',
             title: 'Winners / Participants of Handwriting Competition',
             description: 'Awarded for excellent handwriting skills in the All India Art Talent Contest by Kala Children Academy.'
           },
           {
-            url: 'https://i.imghippo.com/files/NoOZ4178QqY.jpeg',
+            url: 'assets/preprimary/Achievements/Winners Participants of Handwriting Competition 1.jpeg',
             title: 'Winners / Participants of Handwriting Competition',
             description: 'Awarded for excellent handwriting skills in the All India Art Talent Contest by Kala Children Academy.'
           }
@@ -133,17 +133,17 @@ export class PrePrimaryAchievements implements OnInit, OnDestroy {
         title: 'Drawing Competition Winners',
         images: [
           {
-            url: 'https://i.imghippo.com/files/uPSU9411LZw.jpeg',
+            url: 'assets/preprimary/Achievements/Drawing Competition Winners.jpeg',
             title: 'Drawing Competition Winners',
             description: 'Awarded for outstanding creativity and artistic expression in the All India Drawing Competition by Youva Master Stroke.'
           },
           {
-            url: 'https://i.imghippo.com/files/tIxs6861vc.jpeg',
+            url: 'assets/preprimary/Achievements/Drawing Competition Winners 1.jpeg',
             title: 'Drawing Competition Winners',
             description: 'Awarded for outstanding creativity and artistic expression in the All India Drawing Competition by Youva Master Stroke.'
           },
           {
-            url: 'https://i.imghippo.com/files/Ck4089wAs.jpeg',
+            url: 'assets/preprimary/Achievements/Drawing Competition Winners 2.jpeg',
             title: 'Drawing Competition Winners',
             description: 'Awarded for outstanding creativity and artistic expression in the All India Drawing Competition by Youva Master Stroke.'
           }
@@ -158,7 +158,7 @@ export class PrePrimaryAchievements implements OnInit, OnDestroy {
         title: 'Mrs. Sarita Jadhav received Extra Mile Award (2024-25) Sponsored by S.P.R.J.Kanyashala Trust',
         images: [
           {
-            url: 'https://i.postimg.cc/1X8hJxLh/Mrs-Sarita-Jadhav-received-The-Extra-Mile-Award-2024-2025-sponsored-by-S-P-R-J-Kanyashala.jpg',
+            url: 'assets/preprimary/Achievements/Mrs. Sarita Jadhav.jpg',
             title: 'Mrs. Sarita Jadhav received Extra The Mile Award (2024-25)',
             description: 'Mrs. Sarita Jadhav honored for exceptional dedication and contribution.'
           }
@@ -171,7 +171,7 @@ export class PrePrimaryAchievements implements OnInit, OnDestroy {
         title: 'Mrs. Darshana Gaglani received The Extra Mile award (2025-26) Sponsored by S.P.R.J.Kanyashala Trust',
         images: [
           {
-            url: 'https://i.postimg.cc/4NvQTXgN/Darshana-Gaglani-received-The-Extra-Mile-award-2025-2026.jpg',
+            url: 'assets/preprimary/Achievements/Mrs. Darshana Gaglani.jpg',
             title: 'Mrs. Darshana Gaglani received The Extra Mile award (2025-26)',
             description: 'Mrs. Darshana Gaglani honored for exceptional dedication and contribution.'
           }
