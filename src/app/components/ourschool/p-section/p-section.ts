@@ -223,8 +223,8 @@ export class PSection {
     },
     {
       name: 'Mrs. Bhavna Thakkar',
-      position: 'Computer Teacher',
-      qualification: 'Master of Science in Computer Science',
+      position: 'Gujarati Teacher',
+      qualification: 'B.Com',
       image: 'assets/Primary/Staff/Bhavna Thakkar.jpg'
     },
     {
