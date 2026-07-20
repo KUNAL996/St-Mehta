@@ -40,11 +40,11 @@ export class PrePrimaryAchievements implements OnInit, OnDestroy {
     students: [
       {
         id: 1,
-        title: 'Rangotsav Colouring Competition Winners',
+        title: 'Rangotsav Colouring Competition Winners Organised by Rangotsav Celebration',
         images: [
           {
             url: 'assets/preprimary/Achievements/Rangotsav Colouring.jpg',
-            title: 'Rangotsav Colouring Competition Winners',
+            title: 'Rangotsav Colouring Competition Winners Organised by Rangotsav Celebration',
             description: 'Winners showcasing creativity and color sense in the Rangotsav colouring contest.'
           }
         ],
@@ -53,11 +53,11 @@ export class PrePrimaryAchievements implements OnInit, OnDestroy {
       },
       {
         id: 2,
-        title: 'Rangotsav Handwriting Competition – Participation',
+        title: 'Rangotsav Handwriting Competition – Participation Organised by Rangotsav Celebration',
         images: [
           {
             url: 'assets/preprimary/Achievements/Rangotsav Handwriting Competition Participation.jpg',
-            title: 'Rangotsav Handwriting Competition – Participation',
+            title: 'Rangotsav Handwriting Competition – Participation Organised by Rangotsav Celebration',
             description: 'Young participants proudly receive certificates for handwriting excellence.'
           }
         ],
@@ -66,11 +66,11 @@ export class PrePrimaryAchievements implements OnInit, OnDestroy {
       },
       {
         id: 3,
-        title: 'Rangotsav Handwriting Competition Winners',
+        title: 'Rangotsav Handwriting Competition Winners Organised by Rangotsav Celebration',
         images: [
           {
             url: 'assets/preprimary/Achievements/Rangotsav Handwriting Competition Winners.jpg',
-            title: 'Rangotsav Handwriting Competition Winners',
+            title: 'Rangotsav Handwriting Competition Winners Organised by Rangotsav Celebration',
             description: 'Winners celebrated for neatness and presentation in handwriting competition.'
           }
         ],
