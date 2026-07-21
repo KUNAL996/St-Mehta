@@ -53,11 +53,11 @@ export class PrePrimaryAchievements implements OnInit, OnDestroy {
       },
       {
         id: 2,
-        title: 'Rangotsav Handwriting Competition – Participation Organised by Rangotsav Celebration',
+        title: 'Participation in the Rangotsav Handwriting Competition, organised by Rangotsav Celebration',
         images: [
           {
             url: 'assets/preprimary/Achievements/Rangotsav Handwriting Competition Participation.jpg',
-            title: 'Rangotsav Handwriting Competition – Participation Organised by Rangotsav Celebration',
+            title: 'Participation in the Rangotsav Handwriting Competition, organised by Rangotsav Celebration',
             description: 'Young participants proudly receive certificates for handwriting excellence.'
           }
         ],
